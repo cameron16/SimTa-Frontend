@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, View, Button } from 'react-native';
+import {StyleSheet, Text, View, Button } from 'react-native';
 
 export class BasketHomeScreen extends React.Component {
 
@@ -34,13 +34,44 @@ export class BasketHomeScreen extends React.Component {
 
 	 render() {
 	    return (
-	      <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-	        <Text>Your Basket</Text>
-	        <Text>What is good</Text>
-	        <Button onPress ={() => this.send_post()} title = 'I Am Prepared For Greatness'/>
-
+	      <View >
+	        
+          <Text style = {styles.washer}>Washer </Text>
+          <View style = {styles.union} />
 	      </View>
 	    );
 	  }
 	}
 
+          // <Button onPress ={() => this.send_post()} title = 'I Am Prepared For Greatness'/>
+
+
+
+const styles = StyleSheet.create ({
+   washer: {
+      position: 'absolute',
+      width: 112,
+      height: 41,
+      left: 33,
+      top: 105,
+
+      fontFamily: 'Cochin',
+      fontStyle: 'normal',
+      fontWeight: 'bold',
+      fontSize: 24,
+      textAlign: 'center',
+
+      color: '#F2F2F2',
+   },
+   union:{
+      position: 'absolute',
+      width: 320,
+      height: 43,
+      left: 27.04,
+      top: 105.5,
+
+      backgroundColor: '#2D9CDB',
+
+   }
+
+})
