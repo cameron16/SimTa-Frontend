@@ -1,0 +1,253 @@
+/* Welcome frame */
+
+position: 'relative',
+width: 375,
+height: 667,
+
+'backgroundColor': #F2F2F2,
+
+
+/* SimTa logo with transparent 'backgroundColor' inner curved edges */
+
+position: 'absolute',
+width: 200,
+height: 236.9,
+left: 87,
+top: 113,
+
+'backgroundColor': url(SimTa logo with transparent 'backgroundColor' inner curved edges.png),
+
+
+/* rectangle_header */
+
+position: 'absolute',
+width: 375,
+height: 70,
+left: 0,
+top: -4,
+
+'backgroundColor': #2D9CDB,
+box-shadow: 0 4 4 rgba(0, 0, 0, 0.25),
+
+
+/* Welcome to SimTa! */
+
+position: 'absolute',
+width: 227,
+height: 33,
+left: 74,
+top: 17,
+
+fontFamily: 'Cochin',
+fontStyle: 'normal',
+fontWeight: 'bold',
+lineHeight: 'normal',
+fontSize: 24,
+textAlign: 'center',
+
+color: #F2F2F2,
+
+
+/* Password_line */
+
+position: 'absolute',
+width: 265.02,
+height: 0,
+left: 55.99,
+top: 448.48,
+
+border: 2 solid #2D9CDB,
+
+
+/* Email_line */
+
+position: 'absolute',
+width: 265.02,
+height: 0,
+left: 55.99,
+top: 405.48,
+
+border: 2 solid #2D9CDB,
+
+
+/* email_text */
+
+position: 'absolute',
+width: 180,
+height: 25,
+left: 97,
+top: 380,
+
+fontFamily: 'Cochin',
+fontStyle: 'normal',
+fontWeight: 'bold',
+lineHeight: 'normal',
+fontSize: 18,
+textAlign: 'center',
+
+color: #F2F2F2,
+border: 0.5 solid #000000,
+
+
+/* password_text */
+
+position: 'absolute',
+width: 87,
+height: 25,
+left: 144,
+top: 415,
+
+fontFamily: 'Cochin',
+fontStyle: 'normal',
+fontWeight: 'bold',
+lineHeight: 'normal',
+fontSize: 18,
+textAlign: 'center',
+
+color: #F2F2F2,
+border: 0.5 solid #000000,
+
+
+/* envelope_body */
+
+position: 'absolute',
+width: 25,
+height: 18,
+left: 52,
+top: 383,
+
+'backgroundColor': #F2F2F2,
+border: 1 solid #000000,
+box-sizing: border-box,
+borderRadius: 2,
+
+
+/* envelope_bottom_triangle */
+
+position: 'absolute',
+width: 30,
+height: 15,
+left: 50,
+top: 389,
+
+'backgroundColor': #F2F2F2,
+border: 1 solid #000000,
+box-sizing: border-box,
+borderRadius: 1,
+
+
+/* envelope_top_triangle */
+
+position: 'absolute',
+width: 30,
+height: 13,
+left: 50,
+top: 393,
+
+'backgroundColor': #F2F2F2,
+border: 1 solid #000000,
+box-sizing: border-box,
+borderRadius: 1,
+transform: matrix(1, 0, 0, -1, 0, 0),
+
+
+/* lock_top */
+
+position: 'absolute',
+width: 13,
+height: 13,
+left: 57,
+top: 422,
+
+'backgroundColor': #F2F2F2,
+border: 1 solid #000000,
+box-sizing: border-box,
+
+
+/* lock_body */
+
+position: 'absolute',
+width: 15,
+height: 14,
+left: 56,
+top: 428,
+
+'backgroundColor': #F2F2F2,
+border: 1 solid #000000,
+box-sizing: border-box,
+borderRadius: 1,
+
+
+/* login_box */
+
+position: 'absolute',
+width: 211,
+height: 37,
+left: 82,
+top: 475,
+
+'backgroundColor': #2D9CDB,
+borderRadius: 10,
+
+
+/* Login_text */
+
+position: 'absolute',
+width: 121,
+height: 12,
+left: 127,
+top: 487,
+
+fontFamily: 'Cochin',
+fontStyle: 'normal',
+fontWeight: 'bold',
+lineHeight: 'normal',
+fontSize: 18,
+textAlign: 'center',
+
+color: #F2F2F2,
+
+
+/* New? Sign up _text */
+
+position: 'absolute',
+width: 263,
+height: 18,
+left: 54,
+top: 522,
+
+fontFamily: 'Cochin',
+fontStyle: 'normal',
+fontWeight: 'bold',
+lineHeight: 'normal',
+fontSize: 14,
+textAlign: 'center',
+
+color: #000000,
+
+
+/* signup_line */
+
+position: 'absolute',
+width: 49.01,
+height: 0,
+left: 182,
+top: 541.74,
+
+border: 1 solid #4F4F4F,
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

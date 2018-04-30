@@ -1,71 +1,60 @@
 import React from 'react';
-import { Text, View, Button } from 'react-native';
-import { TabNavigator, TabBarBottom, StackNavigator, NavigationActions } from 'react-navigation';
-import Ionicons from 'react-native-vector-icons/Ionicons';
+import { StyleSheet, ScrollView , Text} from 'react-native';
 
-import {SearchHomeScreen} from './Components/SearchRoute/SearchHomeScreen'
-import {LaundromatListScreen} from './Components/SearchRoute/LaundromatListScreen'
-import {BasketHomeScreen} from './Components/BasketRoute/BasketHomeScreen'
+import { DrawerNavigator, StackNavigator } from 'react-navigation';
+import Icon from 'react-native-vector-icons/FontAwesome';
+import {AvailabilityScreen} from './Components/BasketRoute/AvailabilityScreen'
+
+import {HomeScreen} from './Components/BasketRoute/HomeScreen'
 
 
-const BasketRouteNavigator = StackNavigator({
+import { DrawerItems, SafeAreaView } from 'react-navigation';
 
-  BasketHome: {
-    screen: BasketHomeScreen,
+// const CustomDrawerContentComponent = (props) => (
+//   <ScrollView>
+//     <SafeAreaView style={styles.container} forceInset={{ top: 'always', horizontal: 'never' }}>
+//     </SafeAreaView>
+//   </ScrollView>
+// );
+
+
+const Screens = DrawerNavigator({
+  AvailabilityHome: {
+    screen: HomeScreen,
     navigationOptions: {
-      headerTitle: 'Basket',
-    },
+      drawerLabel: 'Dashboard'
+    }
   },
-  
+   
 });
 
+const DrawerNavigation = StackNavigator({
+  DrawerStack: { screen: Screens }
+}, {
+  headerMode: 'float',
+  navigationOptions: ({navigation}) => ({
+    headerStyle: {backgroundColor: '#4C3E54'},
+    title: 'ConNect',
+    headerTintColor: 'white',
+    headerLeft: <Icon name="bars" size={30} color="#fff" style={{ marginLeft: 5 }} onPress={() => navigation.navigate('DrawerToggle')} />
+  })
+})
 
-const SearchRouteNavigator = StackNavigator({
-
-  SearchHome: {
-    screen: SearchHomeScreen,
-    navigationOptions: {
-      headerTitle: 'Welcome',
-    },
-  },
-  LaundromatList: {
-    screen: LaundromatListScreen,
-    navigationOptions:{
-      headerTitle: 'Laundromats'
-    },
-
-  },
-});
-
-
-export default TabNavigator(
-  {
-    SearchRoute: { screen: SearchRouteNavigator },
-    Basket: { screen: BasketRouteNavigator },
-  },
-  {
-    navigationOptions: ({ navigation }) => ({
-      tabBarIcon: ({ focused, tintColor }) => {
-        const { routeName } = navigation.state;
-        let iconName;
-        if (routeName === 'SearchRoute') {
-          iconName = `ios-search${focused ? '' : '-outline'}`;
-        } else if (routeName === 'Basket') {
-          iconName = `ios-basket${focused ? '' : '-outline'}`;
-        }
-
-        // You can return any component that you like here! We usually use an
-        // icon component from react-native-vector-icons
-        return <Ionicons name={iconName} size={25} color={tintColor} />;
-      },
-    }),
-    tabBarOptions: {
-      activeTintColor: 'tomato',
-      inactiveTintColor: 'gray',
-    },
-    tabBarComponent: TabBarBottom,
-    tabBarPosition: 'bottom',
-    animationEnabled: false,
-    swipeEnabled: false,
+export default class App extends React.Component {
+  render() {
+    return (
+      <Screens />
+    );
   }
-);
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+});
+
+

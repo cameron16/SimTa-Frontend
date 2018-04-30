@@ -1,0 +1,393 @@
+/* iPhone 8.3 */
+
+position: relative,
+width: 375,
+height: 667,
+
+backgroundColor: #56CCF2,
+
+
+/* Rectangle_dryer */
+
+position: 'absolute',
+width: 320,
+height: 224,
+left: 27,
+top: 372,
+
+backgroundColor: #F2F2F2,
+box-shadow: inset 0 4 4 rgba(0, 0, 0, 0.25),
+borderRadius: 19,
+
+
+/* Union */
+
+position: 'absolute',
+width: 320,
+height: 43,
+left: 27,
+top: 370,
+
+backgroundColor: #2D9CDB,
+
+
+/* Rectangle 2 */
+
+position: 'absolute',
+width: 320,
+height: 43,
+left: 27,
+top: 370,
+
+backgroundColor: #2D9CDB,
+borderRadius: 19,
+
+
+/* Rectangle 3 */
+
+position: 'absolute',
+width: 320,
+height: 21,
+left: 27,
+top: 392,
+
+backgroundColor: #2D9CDB,
+
+
+/* Dryers */
+
+position: 'absolute',
+width: 112,
+height: 41,
+left: 24,
+top: 371,
+
+fontFamily: 'Cochin',
+fontStyle: 'normal',
+fontWeight: bold,
+lineHeight: 'normal',
+fontSize: 24,
+textAlign: center,
+
+color: #F2F2F2,
+
+
+/* Rectangle_washer */
+
+position: 'absolute',
+width: 320,
+height: 224,
+left: 28.04,
+top: 106.5,
+
+backgroundColor: #F2F2F2,
+borderRadius: 19,
+
+
+/* 0 of 10 Available */
+
+position: 'absolute',
+width: 226,
+height: 27,
+left: 80.04,
+top: 161.5,
+
+fontFamily: 'Cochin',
+fontStyle: 'normal',
+fontWeight: 'normal',
+lineHeight: 'normal',
+fontSize: 18,
+
+color: #000000,
+
+
+/* 4 of 10 Available */
+
+position: 'absolute',
+width: 226,
+height: 27,
+left: 80,
+top: 427,
+
+fontFamily: 'Cochin',
+fontStyle: 'normal',
+fontWeight: 'normal',
+lineHeight: 'normal',
+fontSize: 18,
+
+color: #000000,
+
+
+/* rectangle_header */
+
+position: 'absolute',
+width: 375,
+height: 70,
+left: 0,
+top: -4,
+
+backgroundColor: #2D9CDB,
+box-shadow: 0 4 4 rgba(0, 0, 0, 0.25),
+
+
+/* washer_union */
+
+position: 'absolute',
+width: 320,
+height: 43,
+left: 28.04,
+top: 105.5,
+
+backgroundColor: #2D9CDB,
+
+
+/* washer_union_rectangle_2 */
+
+position: 'absolute',
+width: 320,
+height: 43,
+left: 28.04,
+top: 105.5,
+
+backgroundColor: #2D9CDB,
+borderRadius: 19,
+
+
+/* washer_union_rectangle_1 */
+
+position: 'absolute',
+width: 320,
+height: 21,
+left: 28.04,
+top: 127.5,
+
+backgroundColor: #2D9CDB,
+
+
+/* Exclude */
+
+position: 'absolute',
+width: 29.56,
+height: 25.74,
+left: 38,
+top: 429,
+
+backgroundColor: #2D9CDB,
+
+
+/* Polygon */
+
+position: 'absolute',
+width: 41,
+height: 33,
+left: 26.46,
+top: 441.81,
+
+backgroundColor: #2D9CDB,
+borderRadius: 5,
+transform: rotate(-38.69deg),
+
+
+/* Ellipse */
+
+position: 'absolute',
+width: 13,
+height: 12,
+left: 46.28,
+top: 436.37,
+
+backgroundColor: #C4C4C4,
+
+
+/* Exclude */
+
+position: 'absolute',
+width: 29.56,
+height: 25.74,
+left: 38.77,
+top: 162.13,
+
+backgroundColor: #2D9CDB,
+
+
+/* Polygon */
+
+position: 'absolute',
+width: 41,
+height: 33,
+left: 27.23,
+top: 174.94,
+
+backgroundColor: #2D9CDB,
+borderRadius: 5,
+transform: rotate(-38.69deg),
+
+
+/* Ellipse */
+
+position: 'absolute',
+width: 13,
+height: 12,
+left: 47.04,
+top: 169.5,
+
+backgroundColor: #C4C4C4,
+
+
+/* washer_text */
+
+position: 'absolute',
+width: 112,
+height: 41,
+left: 33.04,
+top: 105.5,
+
+fontFamily: 'Cochin',
+fontStyle: 'normal',
+fontWeight: bold,
+lineHeight: 'normal',
+fontSize: 24,
+textAlign: center,
+
+color: #F2F2F2,
+
+
+/* Ellipse */
+
+position: 'absolute',
+width: 49,
+height: 49,
+left: 4,
+top: 4,
+
+backgroundColor: #56CCF2,
+
+
+/* Line 2.1 */
+
+position: 'absolute',
+width: 36.01,
+height: 0,
+left: 10,
+top: 16.25,
+
+border: 2 solid #F2F2F2,
+
+
+/* Line 2.3 */
+
+position: 'absolute',
+width: 36.01,
+height: 0,
+left: 10,
+top: 28,
+
+border: 2 solid #F2F2F2,
+
+
+/* Line 2.2 */
+
+position: 'absolute',
+width: 36.01,
+height: 0,
+left: 10,
+top: 40,
+
+border: 2 solid #F2F2F2,
+
+
+/* Laundry Room: Roosevelt Island */
+
+position: 'absolute',
+width: 197,
+height: 66,
+left: 89,
+top: 0,
+
+fontFamily: 'Cochin',
+fontStyle: 'normal',
+fontWeight: bold,
+lineHeight: 'normal',
+fontSize: 24,
+textAlign: center,
+
+color: #F2F2F2,
+
+
+/* You have 0 active cycles */
+
+position: 'absolute',
+width: 175,
+height: 29,
+left: 159,
+top: 94,
+
+fontFamily: 'Cochin',
+fontStyle: 'normal',
+fontWeight: 'normal',
+lineHeight: 'normal',
+fontSize: 14,
+
+color: #F2F2F2,
+
+
+/* Rectangle 2 */
+
+position: 'absolute',
+width: 20,
+height: 20,
+left: 40,
+top: 215,
+
+backgroundColor: #F2F2F2,
+border: 2 solid #2D9CDB,
+box-sizing: border-box,
+borderRadius: 3,
+
+
+/* Rectangle 2.1 */
+
+position: 'absolute',
+width: 20,
+height: 20,
+left: 40,
+top: 267,
+
+backgroundColor: #F2F2F2,
+border: 2 solid #2D9CDB,
+box-sizing: border-box,
+borderRadius: 3,
+
+
+/* Ping Idle Users */
+
+position: 'absolute',
+width: 141,
+height: 22,
+left: 80,
+top: 266,
+
+fontFamily: 'Cochin',
+fontStyle: 'normal',
+fontWeight: 'normal',
+lineHeight: 'normal',
+fontSize: 18,
+
+color: #000000,
+
+
+/* Noftify When Washer Available */
+
+position: 'absolute',
+width: 268,
+height: 24,
+left: 79,
+top: 214,
+
+fontFamily: 'Cochin',
+fontStyle: 'normal',
+fontWeight: 'normal',
+lineHeight: 'normal',
+fontSize: 18,
+
+color: #000000,
