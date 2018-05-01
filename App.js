@@ -6,6 +6,7 @@ import Icon from 'react-native-vector-icons/FontAwesome';
 import {AvailabilityScreen} from './Components/BasketRoute/AvailabilityScreen'
 
 import {HomeScreen} from './Components/BasketRoute/HomeScreen'
+import {SignUpScreen} from './Components/BasketRoute/SignUpScreen'
 
 
 import { DrawerItems, SafeAreaView } from 'react-navigation';
@@ -17,10 +18,12 @@ import { DrawerItems, SafeAreaView } from 'react-navigation';
 //   </ScrollView>
 // );
 
-
+//HomeScreen
+//SignUpScreen
+//AvailabilityScreen
 const Screens = DrawerNavigator({
   AvailabilityHome: {
-    screen: HomeScreen,
+    screen: AvailabilityScreen,
     navigationOptions: {
       drawerLabel: 'Dashboard'
     }

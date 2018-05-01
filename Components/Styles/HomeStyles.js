@@ -34,24 +34,26 @@ header_rectangle:{
 
 },
 
+
+
+
 header_text:{
 
 	position: 'absolute',
 	width: 227,
-	height: 33,
+	height: 43,
 	left: 74,
 	top: 17,
 
 	fontFamily: 'Cochin',
 	fontStyle: 'normal',
 	fontWeight: 'bold',
-	lineHeight: 40,
+	lineHeight: 55,
 	fontSize: 24,
 	textAlign: 'center',
 
 	color: '#F2F2F2',
 },
-
 
 
 email_line:{
