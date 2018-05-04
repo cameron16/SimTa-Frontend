@@ -25,7 +25,7 @@ export class WasherScreen extends React.Component {
 
 	render() {
 
-		const loaded_button = this.state.washer_loaded ? <TouchableOpacity style = {styles.loaded_rectangle}><Text style = {styles.loaded_text}>loaded</Text></TouchableOpacity>	
+		const loaded_button = this.state.washer_loaded ? <TouchableOpacity activeOpacity = {1} style = {styles.loaded_rectangle}><Text style = {styles.loaded_text}>loaded</Text></TouchableOpacity>	
   : <View></View>
 
 	    return (
@@ -39,9 +39,7 @@ export class WasherScreen extends React.Component {
 		    	<Text style = {styles.washer1_text2}>Available </Text>
 		    	<MaterialIcons name="local-laundry-service" size={50} color="#27AE60" style={styles.washer1_png}/>
 
-		    	<TouchableOpacity style = {styles.load_rectangle} onPress ={() => this.setState({washer_loaded:true}) }><Text style = {styles.load_text}>load</Text></TouchableOpacity>	
-		    	<Text style = {styles.load_text}>load</Text>
-		    	{loaded_button}
+		    	
 		    	
 		    	<View style = {styles.washer2_line} />
 		    	<Text style = {styles.washer2_text1}>2: </Text>
@@ -68,6 +66,7 @@ export class WasherScreen extends React.Component {
 		    	<Text style = {styles.washer6_text2}>Idle for 15 min</Text>
 		    	<MaterialIcons name="local-laundry-service" size={50} color="#F2994A" style={styles.washer6_png}/>
 
+		    	
 	    		
 	    	</View>
 	    	</TouchableWithoutFeedback>
@@ -75,12 +74,8 @@ export class WasherScreen extends React.Component {
 	}
 }
 
-//<View style = {styles.load_rectangle} />
-		    	//<Text style = {styles.load_text}>load</Text>
-		    	
-
-				/*<TouchableOpacity style = {styles.login_box} onPress={() => {Alert.alert('Login');}}><Text style = {styles.login_text}>Login</Text></TouchableOpacity>	
-		    	 <Text style = {styles.new_text}>New?</Text>
-
-		    	 <TouchableOpacity onPress={() => {Alert.alert('Sign up!');}}><Text style = {styles.sign_up_text}>Sign up</Text></TouchableOpacity>	
-		    	 <View style = {styles.signup_line} />*/
+//<TouchableOpacity style = {styles.load_rectangle} onPress ={() => this.setState({washer_loaded:true}) }><Text style = {styles.load_text}>load</Text></TouchableOpacity>	
+		  
+		    	//{loaded_button}
+//<TouchableOpacity style = {styles.load_rectangle} onPress ={() => this.setState({washer_loaded:true}) }><Text style = {styles.load_text}>load</Text></TouchableOpacity>	
+		    	//{loaded_button}

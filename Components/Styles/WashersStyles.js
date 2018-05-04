@@ -432,26 +432,18 @@ load_rectangle:{
 	backgroundColor: '#F2F2F2',
 	borderWidth: 2,
 	borderColor: '#2D9CDB',
-	//box-sizing: border-box,
 	borderRadius: 10,
 },
 
 
-
-
 load_text:{
-
-	position: 'absolute',
-	width: 49,
-	height: 33,
-	left: 280,
-	top: -63+104,
 
 	fontFamily: 'Cochin',
 	fontStyle: 'normal',
 	fontWeight: 'normal',
-	lineHeight: 40,
+	lineHeight: 35,
 	fontSize: 24,
+	textAlign: 'center',
 
 	color: '#828282',
 },
@@ -470,20 +462,20 @@ loaded_rectangle:{
 
 loaded_text:{
 
-	position: 'absolute',
-	width: 49,
-	height: 33,
-	left: 280,
-	top: -63+104,
-
 	fontFamily: 'Cochin',
 	fontStyle: 'normal',
 	fontWeight: 'normal',
 	lineHeight: 40,
 	fontSize: 24,
+	textAlign: 'center',
 
 	color: '#F2F2F2',
 },
+
+
+
+
+
 
 
 
