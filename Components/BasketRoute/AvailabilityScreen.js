@@ -20,21 +20,24 @@ export class AvailabilityScreen extends React.Component {
         washer_ping: false,
      };
     }
-    
+   
+   
+
 	 render() {
         
-        //const button = this.state.notify_washer ? <Text>HellO</Text>  : <View></View>
+        const {navigate} = this.props.navigation;
         const washer_notify_checkmark = this.state.washer_notify ? <Entypo name="check" size={25} style={styles.washer_notify_checkmark}/>  : <View></View>
         const washer_ping_checkmark = this.state.washer_ping ? <Entypo name="check" size={25} style={styles.washer_ping_checkmark}/>  : <View></View>
+	    return ( 
 
-	    return (
+
 
 	       <View style = {styles.main_screen}>
 
 
           <View style = {styles.rectangle_washer} />
-          <TouchableOpacity activeOpacity = {1} style = {styles.washer_union_rectangle_2} onPress ={() => alert('washer')}></TouchableOpacity>  
-          <TouchableOpacity activeOpacity = {1} style = {styles.washer_union_rectangle_1} onPress ={() => alert('washer')}></TouchableOpacity> 
+          <TouchableOpacity activeOpacity = {1} style = {styles.washer_union_rectangle_2} onPress ={() => navigate('Washer')}></TouchableOpacity>  
+          <TouchableOpacity activeOpacity = {1} style = {styles.washer_union_rectangle_1} onPress ={() => navigate('Washer')}></TouchableOpacity> 
           
           <Text style = {styles.washer_text}>Washers</Text>
           <View  style = {styles.washer_polygon_avail} />

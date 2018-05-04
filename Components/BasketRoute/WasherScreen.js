@@ -46,9 +46,8 @@ export class WasherScreen extends React.Component {
 		    	<Text style = {styles.washer4_text2}>Idle for 22 min</Text>
 		    	<MaterialIcons name="local-laundry-service" size={50} color="#F2994A" style={styles.washer4_png}/>
 
-		    	<View style = {styles.load_rectangle} />
+		    	<TouchableOpacity style = {styles.load_rectangle} onPress ={() => alert('load alert') }><Text style = {styles.load_text}>load</Text></TouchableOpacity>	
 		    	<Text style = {styles.load_text}>load</Text>
-		    	
 		    	
 	    		
 	    	</View>
@@ -56,6 +55,11 @@ export class WasherScreen extends React.Component {
 	);
 	}
 }
+
+// <View style = {styles.load_rectangle} />
+// 		    	<Text style = {styles.load_text}>load</Text>
+		    	
+
 				/*<TouchableOpacity style = {styles.login_box} onPress={() => {Alert.alert('Login');}}><Text style = {styles.login_text}>Login</Text></TouchableOpacity>	
 		    	 <Text style = {styles.new_text}>New?</Text>
 
