@@ -19,7 +19,7 @@ logo:{
 	width: 200,
 	height: 236.9,
 	left: 87,
-	top: 113,
+	top: -63+113, 
 
 },
 
@@ -28,7 +28,7 @@ header_rectangle:{
 	width: 375,
 	height: 70,
 	left: 0,
-	top: -4,
+	top: -63+-4,
 
 	backgroundColor: '#2D9CDB',
 
@@ -43,7 +43,7 @@ header_text:{
 	width: 227,
 	height: 43,
 	left: 74,
-	top: 17,
+	top: -63+17,
 
 	fontFamily: 'Cochin',
 	fontStyle: 'normal',
@@ -62,7 +62,7 @@ email_line:{
 	width: 265.02,
 	height: 0,
 	left: 55.99,
-	top: 405.48,
+	top: -63+405.48,
 
 	borderWidth: 2,
 	borderColor: '#2D9CDB',
@@ -75,7 +75,7 @@ password_line:{
 	width: 265.02,
 	height: 0,
 	left: 55.99,
-	top: 448.48,
+	top: -63+448.48,
 
 	borderColor: '#2D9CDB' ,
 	borderWidth: 2,
@@ -89,7 +89,7 @@ email_text:{
 	width: 180,
 	height: 25,
 	left: 97,
-	top: 381,//380,
+	top: -63+381,//380,
 
 	fontFamily: 'Cochin',
 	fontStyle: 'normal',
@@ -111,7 +111,7 @@ password_text:{
 	width: 87,
 	height: 25,
 	left: 144,
-	top: 420,//415,
+	top: -63+420,//415,
 
 	fontFamily: 'Cochin',
 	fontStyle: 'normal',
@@ -137,7 +137,7 @@ envelope_icon:{
 	width: 40,
 	height: 30,
 	left: 56,
-	top: 377,
+	top: -63+377,
 
 },
 
@@ -148,7 +148,7 @@ envelope_body:{
 	width: 25,
 	height: 18,
 	left: 52,
-	top: 383,
+	top: -63+383,
 
 	backgroundColor: '#F2F2F2',
 	borderWidth: 1,
@@ -162,7 +162,7 @@ envelope_bottom_triangle:{
 	width: 30,
 	height: 15,
 	left: 50,
-	top: 389,
+	top: -63+389,
 
 	backgroundColor: '#F2F2F2',
 	borderWidth: 1,
@@ -176,7 +176,7 @@ envelope_top_triangle:{
 	width: 30,
 	height: 13,
 	left: 50,
-	top: 393,
+	top: -63+393,
 
 	backgroundColor: '#F2F2F2',
 	borderWidth: 1,
@@ -194,7 +194,7 @@ lock_top:{
 	width: 13,
 	height: 13,
 	left: 57,
-	top: 422,
+	top: -63+422,
 
 	backgroundColor: '#F2F2F2',
 	borderWidth: 1,
@@ -210,7 +210,7 @@ lock_body:{
 	width: 15,
 	height: 14,
 	left: 56,
-	top: 428,
+	top: -63+428,
 
 	backgroundColor: '#F2F2F2',
 	borderWidth: 1,
@@ -235,7 +235,7 @@ login_box:{
 	width: 211,
 	height: 37,
 	left: 82,
-	top: 475,
+	top: -63+475,
 
 	backgroundColor: '#2D9CDB',
 	borderRadius: 10,
@@ -268,7 +268,7 @@ login_button:{
 	// width: 211,
 	// height: 37,
 	left: 82,
-	top: 550,
+	top: -63+550,
 	color: '#F2F2F2'
 
 	// backgroundColor: '#2D9CDB',
@@ -285,7 +285,7 @@ new_text:{
 	width: 53,
 	height: 18,
 	left: 133,
-	top: 523,
+	top: -63+523,
 
 	fontFamily: 'Cochin',
 	fontStyle: 'normal',
@@ -301,11 +301,11 @@ new_text:{
 
 sign_up_text:{
 
-	position: 'absolute',
-	width: 53,
-	height: 18,
-	left: 181,
-	top: 523,
+	// position: 'absolute',
+	// width: 53,
+	// height: 18,
+	// left: 181,
+	// top: 523,
 
 	fontFamily: 'Cochin',
 	fontStyle: 'normal',
@@ -325,7 +325,7 @@ new_sign_up_text:{
 	width: 263,
 	height: 18,
 	left: 54,
-	top: 522,
+	top: -63+522,
 
 	fontFamily: 'Cochin',
 	fontStyle: 'normal',
@@ -336,6 +336,30 @@ new_sign_up_text:{
 
 	color: '#000000',
 },
+/* sign_up_button */
+sign_up_button:{
+
+	position: 'absolute',
+	width: 56,
+	height: 2,
+	left: 182,
+	top: -63+520,
+
+	backgroundColor: 'transparent',
+
+},
+
+sign_up_rectangle:{
+
+	position: 'absolute',
+	width: 53,
+	height: 18,
+	left: 181,
+	top: -63+523,
+	backgroundColor: '#F2F2F2',
+
+
+},
 
 
 signup_line: {
@@ -344,7 +368,7 @@ signup_line: {
 	width: 49.01,
 	height: 0,
 	left: 182,
-	top: 541.74,
+	top: -63+541.74,
 
 	borderWidth: 1,
 	borderColor:'#4F4F4F',
@@ -353,3 +377,6 @@ signup_line: {
 
 
 })
+
+
+

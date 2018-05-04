@@ -19,7 +19,7 @@ export default StyleSheet.create({
 	    width: 375,
 		height: 70,
 		left: 0,
-		top: -4,
+		top: -63+-4,
 
 		backgroundColor: '#2D9CDB',
 
@@ -33,7 +33,7 @@ export default StyleSheet.create({
 		width: 227,
 		height: 43,
 		left: 74,
-		top: 17,
+		top: -63+17,
 
 		fontFamily: 'Cochin',
 		fontStyle: 'normal',
@@ -51,7 +51,7 @@ export default StyleSheet.create({
 		width: 265.02,
 		height: 0,
 		left: 55.99,
-		top: 207.48,
+		top: -63+207.48,
 
 		borderWidth: 2,
 		borderColor: '#2D9CDB',
@@ -61,7 +61,7 @@ export default StyleSheet.create({
 		width: 265.02,
 		height: 0,
 		left: 55.99,
-		top: 252.48,
+		top: -63+252.48,
 
 		borderWidth: 2,
 		borderColor: '#2D9CDB',
@@ -74,7 +74,7 @@ export default StyleSheet.create({
 		width: 265.02,
 		height: 0,
 		left: 55.99,
-		top: 304.48,
+		top: -63+304.48,
 
 		borderWidth: 2,
 		borderColor: '#2D9CDB',
@@ -87,7 +87,7 @@ export default StyleSheet.create({
 		width: 265.02,
 		height: 0,
 		left: 55.99,
-		top: 351.48,
+		top: -63+351.48,
 
 		borderWidth: 2,
 		borderColor: '#2D9CDB',
@@ -99,7 +99,7 @@ export default StyleSheet.create({
 		width: 30,
 		height: 50,
 		left: 52.54,
-		top: 176,
+		top: -63+176,
   	},
 
 
@@ -109,7 +109,7 @@ export default StyleSheet.create({
 		width: 30,
 		height: 25,
 		left: 57,
-		top: 226,
+		top: -63+226,
 
   	},
 
@@ -118,7 +118,7 @@ export default StyleSheet.create({
 		width: 30,
 		height: 30,
 		left: 53,
-		top: 281,
+		top: -63+281,
   	},
 
   	lock_confirm_pass:{
@@ -126,7 +126,7 @@ export default StyleSheet.create({
 		width: 30,
 		height: 30,
 		left: 53,
-		top: 328,
+		top: -63+328,
   	},
   	name_text:{
 
@@ -134,7 +134,7 @@ export default StyleSheet.create({
 		width: 52,
 		height: 25,
 		left: 161,
-		top: 181,
+		top: -63+181,
 
 		fontFamily: 'Cochin',
 		fontStyle: 'normal',
@@ -155,7 +155,7 @@ export default StyleSheet.create({
 		width: 180,
 		height: 25,
 		left: 97,
-		top: 227,
+		top: -63+227,
 
 		fontFamily: 'Cochin',
 		fontStyle: 'normal',
@@ -177,7 +177,7 @@ export default StyleSheet.create({
 		width: 87,
 		height: 25,
 		left: 144,
-		top: 271,
+		top: -63+271,
 
 		fontFamily: 'Cochin',
 		fontStyle: 'normal',
@@ -197,7 +197,7 @@ export default StyleSheet.create({
 		width: 162,
 		height: 25,
 		left: 106,
-		top: 318,
+		top: -63+318,
 
 		fontFamily: 'Cochin',
 		fontStyle: 'normal',
@@ -218,7 +218,7 @@ export default StyleSheet.create({
 		// width: 115,
 		// height: 25,
 		// left: 48,
-		// top: 435,
+		// top: -63+435,
 
 		fontFamily: 'Cochin',
 		fontStyle: 'normal',
@@ -235,7 +235,7 @@ export default StyleSheet.create({
 		width: 139,
 		height: 45,
 		left: 37,
-		top: 426,
+		top: -63+426,
 
 		backgroundColor: '#2D9CDB',
 		borderRadius: 10,
@@ -249,7 +249,7 @@ export default StyleSheet.create({
 		// width: 115,
 		// height: 25,
 		// left: 210,
-		// top: 435,
+		// top: -63+435,
 
 		fontFamily: 'Cochin',
 		fontStyle: 'normal',
@@ -267,7 +267,7 @@ export default StyleSheet.create({
 		width: 139,
 		height: 45,
 		left: 199,
-		top: 426,
+		top: -63+426,
 
 		backgroundColor: '#2D9CDB',
 		borderRadius: 10,
@@ -280,7 +280,7 @@ export default StyleSheet.create({
 		width: 50,
 		height: 14,
 		left: 6,
-		top: 29,
+		top: -63+29,
 
 		fontFamily: 'Cochin',
 		fontStyle: 'normal',

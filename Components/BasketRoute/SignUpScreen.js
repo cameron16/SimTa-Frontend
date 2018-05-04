@@ -15,6 +15,11 @@ import Feather from 'react-native-vector-icons/Feather';
 import styles from "../Styles/SignupStyles"
 
 export class SignUpScreen extends React.Component {
+
+	// static navigationOptions = {
+ //        header: null
+ //    	}
+ 
 	constructor(props) {
 	    super(props);
 	    this.state = { 
@@ -22,7 +27,6 @@ export class SignUpScreen extends React.Component {
 	    	email: "",
 	    	password: "",
 	    	confirm_password: ""
-
 	   };
   	}
 
@@ -32,12 +36,7 @@ export class SignUpScreen extends React.Component {
 	    	<TouchableWithoutFeedback onPress = {Keyboard.dismiss}>
 
 	    	<View style = {styles.main_screen}>
-		    	<View style = {styles.rectangle_header} />
-		    	<Text style = {styles.create_account_text}>Create Account</Text>
-
 		    	
-
-
 		    	<TextInput
 			        style={styles.name_text}
 			        placeholder = "name"
@@ -88,3 +87,6 @@ export class SignUpScreen extends React.Component {
 	);
 	}
 }
+
+// <View style = {styles.rectangle_header} />
+// 		    	<Text style = {styles.create_account_text}>Create Account</Text>

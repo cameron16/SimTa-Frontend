@@ -21,7 +21,7 @@ export default StyleSheet.create({
     width: 375,
     height: 70,
     left: 0,
-    top: -4,
+    top: -63+ -4,
 
     backgroundColor: '#2D9CDB',
     // box-shadow: 0 4 4 rgba(0, 0, 0, 0.25),
@@ -33,7 +33,7 @@ export default StyleSheet.create({
     width: 320,
     height: 224,
     left: 27.04,
-    top: 106.5,
+    top: -63+ 106.5,
 
     backgroundColor: '#F2F2F2',
     // boxShadow: inset 0 4 4 rgba(0, 0, 0, 0.25),
@@ -46,7 +46,7 @@ export default StyleSheet.create({
     width: 320,
     height: 224,
     left: 27.04,
-    top: 372,
+    top: -63+ 372,
     backgroundColor: '#F2F2F2',
     borderRadius: 19,
   },
@@ -59,7 +59,7 @@ export default StyleSheet.create({
     width: 197,
     height: 66,
     left: 89,
-    top: 0,
+    top: -63+ 0,
     fontFamily: 'Cochin',
     fontStyle: 'normal',
     fontWeight: 'bold',
@@ -77,7 +77,7 @@ export default StyleSheet.create({
       width: 112,
       height: 41,
       left: 33.04,
-      top: 105.5,//105
+      top: -63+ 105.5,//105
 
       fontFamily: 'Cochin',
       fontStyle: 'normal',
@@ -95,7 +95,7 @@ export default StyleSheet.create({
     width: 112,
     height: 41,
     left: 24,
-    top: 371,
+    top: -63+ 371,
 
     fontFamily: 'Cochin',
     fontStyle: 'normal',
@@ -118,7 +118,7 @@ export default StyleSheet.create({
     width: 320,
     height: 21,
     left: 27.04,
-    top: 127.5,
+    top: -63+ 127.5,
 
     backgroundColor: '#2D9CDB',
    },
@@ -128,10 +128,11 @@ export default StyleSheet.create({
     width: 320,
     height: 43,
     left: 27.04,
-    top: 105.5,
+    top: -63+ 105.5,
 
     backgroundColor: '#2D9CDB',
     borderRadius: 19,
+
    },
     /******************/
 
@@ -144,7 +145,7 @@ export default StyleSheet.create({
     width: 320,
     height: 21,
     left: 27,
-    top: 392,
+    top: -63+ 392,
 
     backgroundColor: '#2D9CDB',
 
@@ -155,7 +156,7 @@ export default StyleSheet.create({
       width: 320,
       height: 43,
       left: 27,
-      top: 370,
+      top: -63+ 370,
 
       backgroundColor: '#2D9CDB',
       borderRadius: 19,
@@ -170,7 +171,7 @@ export default StyleSheet.create({
     width: 30,
     height: 30,
     left: 38,
-    top: 161,
+    top: -63+ 161,
 
     backgroundColor: '#2D9CDB',
     borderRadius: 5,
@@ -186,7 +187,7 @@ export default StyleSheet.create({
     width: 13,
     height: 12,
     left: 46.28,
-    top: 169.5,
+    top: -63+ 169.5,
     borderRadius: 5,
     backgroundColor:'#F2F2F2',
 
@@ -196,7 +197,7 @@ export default StyleSheet.create({
     width: 226,
     height: 27,
     left: 80.04,
-    top: 161.5,
+    top: -63+ 161.5,
 
     fontFamily: 'Cochin',
     fontStyle: 'normal',
@@ -213,7 +214,7 @@ export default StyleSheet.create({
     width: 20,
     height: 20,
     left: 42.5,
-    top: 215,
+    top: -63+ 215,
 
     backgroundColor: '#F2F2F2',
     borderColor:  '#2D9CDB',
@@ -227,7 +228,7 @@ export default StyleSheet.create({
     width: 268,
     height: 24,
     left: 79,
-    top: 214,
+    top: -63+ 214,
     fontFamily: 'Cochin',
     fontStyle: 'normal',
     fontWeight: 'normal',
@@ -243,7 +244,7 @@ export default StyleSheet.create({
     width: 20,
     height: 20,
     left: 42.5,
-    top: 267,
+    top: -63+ 267,
     backgroundColor: '#F2F2F2',
     borderColor:  '#2D9CDB',
     borderWidth: 2,
@@ -256,7 +257,7 @@ export default StyleSheet.create({
     width: 141,
     height: 22,
     left: 79,
-    top: 266,
+    top: -63+ 266,
 
     fontFamily: 'Cochin',
     fontStyle: 'normal',
@@ -281,7 +282,7 @@ export default StyleSheet.create({
     width: 13,
     height: 12,
     left: 46.28,
-    top: 436.37,
+    top: -63+ 436.37,
     borderRadius: 5,
 
     backgroundColor:'#F2F2F2',
@@ -292,7 +293,7 @@ export default StyleSheet.create({
     width: 30,
     height: 30,
     left: 38,
-    top: 428,
+    top: -63+ 428,
 
     backgroundColor: '#2D9CDB',
     borderRadius: 5,
@@ -308,7 +309,7 @@ export default StyleSheet.create({
     width: 226,
     height: 27,
     left: 80,
-    top: 427,
+    top: -63+ 427,
 
     fontFamily: 'Cochin',
     fontStyle: 'normal',

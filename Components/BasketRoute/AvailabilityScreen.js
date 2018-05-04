@@ -1,5 +1,5 @@
 import React from 'react';
-import {StyleSheet, Text, View, Button } from 'react-native';
+import {StyleSheet, Text, View, Button, TouchableOpacity } from 'react-native';
 
 import styles from "../Styles/AvailabilityStyles"
 
@@ -18,14 +18,10 @@ export class AvailabilityScreen extends React.Component {
 	       <View style = {styles.main_screen}>
 
 
-
-
-          <View style = {styles.rectangle_header} />
-          <Text style = {styles.header_text}>77 Laundromat</Text>
-
           <View style = {styles.rectangle_washer} />
-          <View style = {styles.washer_union_rectangle_2} />
-          <View style = {styles.washer_union_rectangle_1} />
+          <TouchableOpacity activeOpacity = {1} style = {styles.washer_union_rectangle_2} onPress ={() => alert('washer')}></TouchableOpacity>  
+          <TouchableOpacity activeOpacity = {1} style = {styles.washer_union_rectangle_1} onPress ={() => alert('washer')}></TouchableOpacity> 
+          
           <Text style = {styles.washer_text}>Washers</Text>
           <View  style = {styles.washer_polygon_avail} />
           <View style = {styles.washer_ellipse_avail} />
@@ -40,8 +36,9 @@ export class AvailabilityScreen extends React.Component {
 
 
           <View style = {styles.rectangle_dryer} />
-          <View style = {styles.dryer_union_rectangle_2} />
-          <View style = {styles.dryer_union_rectangle_1} />
+          <TouchableOpacity activeOpacity = {1} style = {styles.dryer_union_rectangle_2} onPress ={() => alert('dryer')}></TouchableOpacity>  
+          <TouchableOpacity activeOpacity = {1} style = {styles.dryer_union_rectangle_1} onPress ={() => alert('dryer')}></TouchableOpacity> 
+         
 
           <Text style = {styles.dryer_text}>Dryers</Text>
 
@@ -55,6 +52,16 @@ export class AvailabilityScreen extends React.Component {
 	  }
 	}
 
+ // <View style = {styles.dryer_union_rectangle_2} />
+ //          <View style = {styles.dryer_union_rectangle_1} />
+
+  // <View style = {styles.washer_union_rectangle_2} />
+  //         <View style = {styles.washer_union_rectangle_1} />
+
+
+
+ // <View style = {styles.rectangle_header} />
+ //          <Text style = {styles.header_text}>77 Laundromat</Text>
 
 
 
