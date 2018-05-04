@@ -38,6 +38,10 @@ export class WasherScreen extends React.Component {
 		    	<Text style = {styles.washer1_text1}>1: </Text>
 		    	<Text style = {styles.washer1_text2}>Available </Text>
 		    	<MaterialIcons name="local-laundry-service" size={50} color="#27AE60" style={styles.washer1_png}/>
+
+		    	<TouchableOpacity style = {styles.load_rectangle} onPress ={() => this.setState({washer_loaded:true}) }><Text style = {styles.load_text}>load</Text></TouchableOpacity>	
+		    	<Text style = {styles.load_text}>load</Text>
+		    	{loaded_button}
 		    	
 		    	<View style = {styles.washer2_line} />
 		    	<Text style = {styles.washer2_text1}>2: </Text>
@@ -54,9 +58,16 @@ export class WasherScreen extends React.Component {
 		    	<Text style = {styles.washer4_text2}>Idle for 22 min</Text>
 		    	<MaterialIcons name="local-laundry-service" size={50} color="#F2994A" style={styles.washer4_png}/>
 
-		    	<TouchableOpacity style = {styles.load_rectangle} onPress ={() => this.setState({washer_loaded:true}) }><Text style = {styles.load_text}>load</Text></TouchableOpacity>	
-		    	<Text style = {styles.load_text}>load</Text>
-		    	{loaded_button}
+		    	<View style = {styles.washer5_line} />
+		    	<Text style = {styles.washer5_text1}>5: </Text>
+		    	<Text style = {styles.washer5_text2}>Available</Text>
+		    	<MaterialIcons name="local-laundry-service" size={50} color="#27AE60" style={styles.washer5_png}/>
+
+		    	<View style = {styles.washer6_line} />
+		    	<Text style = {styles.washer6_text1}>6: </Text>
+		    	<Text style = {styles.washer6_text2}>Idle for 15 min</Text>
+		    	<MaterialIcons name="local-laundry-service" size={50} color="#F2994A" style={styles.washer6_png}/>
+
 	    		
 	    	</View>
 	    	</TouchableWithoutFeedback>
@@ -64,8 +75,8 @@ export class WasherScreen extends React.Component {
 	}
 }
 
-<View style = {styles.load_rectangle} />
-		    	<Text style = {styles.load_text}>load</Text>
+//<View style = {styles.load_rectangle} />
+		    	//<Text style = {styles.load_text}>load</Text>
 		    	
 
 				/*<TouchableOpacity style = {styles.login_box} onPress={() => {Alert.alert('Login');}}><Text style = {styles.login_text}>Login</Text></TouchableOpacity>	
