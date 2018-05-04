@@ -34,6 +34,7 @@ export class LoginScreen extends React.Component {
 	    	<TouchableWithoutFeedback onPress = {Keyboard.dismiss}>
 	    	<View style = {styles.main_screen}>
 	    	
+	    		
 		    	<Image source ={require('../../Pictures/simta_logo.png')} style = {styles.logo} />
 		    	<View style = {styles.email_line} />
 		    	<Foundation name="mail" size={30} style={styles.envelope_icon}/>

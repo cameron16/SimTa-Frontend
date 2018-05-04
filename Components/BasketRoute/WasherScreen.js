@@ -65,7 +65,7 @@ export class WasherScreen extends React.Component {
 		    	<Text style = {styles.washer6_text1}>6: </Text>
 		    	<Text style = {styles.washer6_text2}>Idle for 15 min</Text>
 		    	<MaterialIcons name="local-laundry-service" size={50} color="#F2994A" style={styles.washer6_png}/>
-
+		    	{loaded_button}
 		    	
 	    		
 	    	</View>

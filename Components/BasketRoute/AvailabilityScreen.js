@@ -36,9 +36,8 @@ export class AvailabilityScreen extends React.Component {
 
 
           <View style = {styles.rectangle_washer} />
-          <TouchableOpacity activeOpacity = {1} style = {styles.washer_union_rectangle_2} onPress ={() => navigate('Washer')}></TouchableOpacity>  
-          <TouchableOpacity activeOpacity = {1} style = {styles.washer_union_rectangle_1} onPress ={() => navigate('Washer')}></TouchableOpacity> 
-          
+          <TouchableOpacity style = {styles.washer_union_rectangle_2} onPress ={() => navigate('Washer')}></TouchableOpacity>  
+
           <Text style = {styles.washer_text}>Washers</Text>
           <View  style = {styles.washer_polygon_avail} />
           <View style = {styles.washer_ellipse_avail} />
@@ -56,7 +55,6 @@ export class AvailabilityScreen extends React.Component {
 
           <View style = {styles.rectangle_dryer} />
           <TouchableOpacity activeOpacity = {1} style = {styles.dryer_union_rectangle_2} onPress ={() => alert('dryer')}></TouchableOpacity>  
-          <TouchableOpacity activeOpacity = {1} style = {styles.dryer_union_rectangle_1} onPress ={() => alert('dryer')}></TouchableOpacity> 
          
 
           <Text style = {styles.dryer_text}>Dryers</Text>
@@ -71,6 +69,12 @@ export class AvailabilityScreen extends React.Component {
 	    );
 	  }
 	}
+
+
+
+           // <TouchableOpacity style = {styles.washer_union_rectangle_1} onPress ={() => navigate('Washer')}></TouchableOpacity> 
+           // <TouchableOpacity activeOpacity = {1} style = {styles.dryer_union_rectangle_1} onPress ={() => alert('dryer')}></TouchableOpacity> 
+
 
 
         //    <View style = {styles.washer_rectangle_notify} />

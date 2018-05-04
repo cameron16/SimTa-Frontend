@@ -112,17 +112,41 @@ export default StyleSheet.create({
 
   /*Washer Union Rectangles*/
 
-  washer_union_rectangle_1:{
+  // washer_union_rectangle_1:{
+
+  //   position: 'absolute',
+  //   width: 320,
+  //   height: 21,
+  //   left: 27.04,
+  //   top: -63+ 127.5,
+
+  //   backgroundColor: '#2D9CDB',
+  //  }, 
+  // washer_union_rectangle_2: {
+
+  //   position: 'absolute',
+  //   width: 320,
+  //   height: 43,
+  //   left: 27.04,
+  //   top: -63+ 105.5,
+
+  //   backgroundColor: '#2D9CDB',
+  //   borderRadius: 19,
+
+  //  },
+
+
+    washer_union_rectangle_1:{
 
     position: 'absolute',
     width: 320,
-    height: 21,
+    height: 5,
     left: 27.04,
-    top: -63+ 127.5,
+    top: -63+ 143.5,
 
     backgroundColor: '#2D9CDB',
    },
-  washer_union_rectangle_2: {
+   washer_union_rectangle_2: {
 
     position: 'absolute',
     width: 320,
@@ -134,6 +158,8 @@ export default StyleSheet.create({
     borderRadius: 19,
 
    },
+
+  
     /******************/
 
 
