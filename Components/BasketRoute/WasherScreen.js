@@ -58,8 +58,8 @@ export class WasherScreen extends React.Component {
 
 		    	<View style = {styles.washer5_line} />
 		    	<Text style = {styles.washer5_text1}>5: </Text>
-		    	<Text style = {styles.washer5_text2}>Available</Text>
-		    	<MaterialIcons name="local-laundry-service" size={50} color="#27AE60" style={styles.washer5_png}/>
+		    	<Text style = {styles.washer5_text2}>Idle for 16 min</Text>
+		    	<MaterialIcons name="local-laundry-service" size={50} color="#F2994A" style={styles.washer5_png}/>
 
 		    	<View style = {styles.washer6_line} />
 		    	<Text style = {styles.washer6_text1}>6: </Text>

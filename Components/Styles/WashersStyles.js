@@ -365,7 +365,7 @@ washer5_text2: {
 	lineHeight: 40,
 	fontSize: 24,
 
-	color: '#27AE60',
+	color: '#F2994A',
 },
 
 washer6_line: {
