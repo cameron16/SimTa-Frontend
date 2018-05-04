@@ -331,6 +331,8 @@ load_rectangle:{
 },
 
 
+
+
 load_text:{
 
 	position: 'absolute',
@@ -347,5 +349,36 @@ load_text:{
 
 	color: '#828282',
 },
+
+
+loaded_rectangle:{
+
+	position: 'absolute',
+	width: 88,
+	height: 40,
+	left: 256,
+	top: 105,
+	backgroundColor: '#2D9CDB',
+	borderRadius: 10,
+},
+
+loaded_text:{
+
+	position: 'absolute',
+	width: 49,
+	height: 33,
+	left: 280,
+	top: 104,
+
+	fontFamily: 'Cochin',
+	fontStyle: 'normal',
+	fontWeight: 'normal',
+	lineHeight: 40,
+	fontSize: 24,
+
+	color: '#F2F2F2',
+},
+
+
 
 })
