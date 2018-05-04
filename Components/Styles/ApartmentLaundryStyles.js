@@ -36,7 +36,7 @@ Apartment_Laundry_Room_text:{
 	fontFamily: 'Cochin',
 	fontStyle: 'normal',
 	fontWeight: 'bold',
-	lineHeight: 'normal',
+	lineHeight: 40,
 	fontSize: 24,
 	textAlign: 'center',
 
@@ -48,7 +48,7 @@ QR_code_rectangle:{
 	position: 'absolute',
 	width: 241,
 	height: 86,
-	left: 59,
+	left: 65,
 	top: 334,
 
 	backgroundColor: '#2D9CDB',
@@ -60,7 +60,7 @@ apartment_code_rectangle:{
 	position: 'absolute',
 	width: 241,
 	height: 80,
-	left: 59,
+	left: 65,
 	top: 156,
 
 	backgroundColor: '#2D9CDB',
@@ -85,12 +85,12 @@ apartment_code_text:{
 	width: 202,
 	height: 25,
 	left: 75,
-	top: 184,
+	top: 188,
 
 	fontFamily: 'Cochin',
 	fontStyle: 'normal',
 	fontWeight: 'bold',
-	lineHeight: 'normal',
+	lineHeight: 0,
 	fontSize: 18,
 	textAlign: 'center',
 
@@ -101,15 +101,15 @@ apartment_code_text:{
 OR_text:{
 
 	position: 'absolute',
-	width: 35,
+	width: 55,
 	height: 33,
-	left: 160,
+	left: 150,
 	top: 268,
 
 	fontFamily: 'Cochin',
 	fontStyle: 'normal',
 	fontWeight: 'bold',
-	lineHeight: 'normal',
+	lineHeight: 0,
 	fontSize: 24,
 	textAlign: 'center',
 
@@ -117,18 +117,18 @@ OR_text:{
 },
 
 
-Scan QR Code_text:{
+Scan_QR_Code_text:{
 
 	position: 'absolute',
 	width: 123,
 	height: 25,
 	left: 126,
-	top: 364,
+	top: 368,
 
 	fontFamily: 'Cochin',
 	fontStyle: 'normal',
 	fontWeight: 'bold',
-	lineHeight: 'normal',
+	lineHeight: 0,
 	fontSize: 18,
 	textAlign: 'center',
 
@@ -141,8 +141,7 @@ corner_box_img:{
 	height: 22,
 	left: 93,
 	top: 366,
-}
-
+},
 
 done_text:{
 
@@ -155,9 +154,11 @@ done_text:{
 	fontFamily: 'Cochin',
 	fontStyle: 'normal',
 	fontWeight: 'bold',
-	lineHeight: 'normal',
+	lineHeight: 0,
 	fontSize: 18,
 	textAlign: 'center',
 
 	color: '#F2F2F2',
 },
+
+})

@@ -7,7 +7,9 @@ import {AvailabilityScreen} from './Components/BasketRoute/AvailabilityScreen'
 
 import {HomeScreen} from './Components/BasketRoute/HomeScreen'
 import {SignUpScreen} from './Components/BasketRoute/SignUpScreen'
-
+import {WasherScreen} from './Components/BasketRoute/WasherScreen'
+import {ApartmentLaundryScreen} from './Components/BasketRoute/ApartmentLaundryScreen'
+import {LaundryScreen} from './Components/BasketRoute/LaundryScreen'
 
 import { DrawerItems, SafeAreaView } from 'react-navigation';
 
@@ -23,7 +25,7 @@ import { DrawerItems, SafeAreaView } from 'react-navigation';
 //AvailabilityScreen
 const Screens = DrawerNavigator({
   AvailabilityHome: {
-    screen: AvailabilityScreen,
+    screen: LaundryScreen,
     navigationOptions: {
       drawerLabel: 'Dashboard'
     }
