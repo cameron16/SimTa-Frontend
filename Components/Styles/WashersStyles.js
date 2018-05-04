@@ -120,6 +120,7 @@ washer1_png: {
 	top: -63+100,
 },
 
+
 /* 1: Available */
 washer1_text1: {
 	position: 'absolute',
@@ -137,7 +138,7 @@ washer1_text1: {
 	color: '#000000',
 },
 
-washer1_text2: {
+washer1_text2_1: {
 	position: 'absolute',
 	width: 208,
 	height: 45,
@@ -151,6 +152,22 @@ washer1_text2: {
 	fontSize: 24,
 
 	color: '#27AE60',
+},
+
+washer1_text2_2: {
+	position: 'absolute',
+	width: 208,
+	height: 45,
+	left: 110,
+	top: -63+104,
+
+	fontFamily: 'Cochin',
+	fontStyle: 'normal',
+	fontWeight: 'normal',
+	lineHeight: 40,
+	fontSize: 24,
+
+	color: '#9B51E0',
 },
 
 /* Line 3.1 */
@@ -421,7 +438,7 @@ washer6_text2: {
 	color: '#F2994A',
 },
 
-load_rectangle:{
+claim_rectangle:{
 
 	position: 'absolute',
 	width: 88,
@@ -436,7 +453,7 @@ load_rectangle:{
 },
 
 
-load_text:{
+claim_text:{
 
 	fontFamily: 'Cochin',
 	fontStyle: 'normal',
@@ -449,7 +466,7 @@ load_text:{
 },
 
 
-loaded_rectangle:{
+claimed_rectangle:{
 
 	position: 'absolute',
 	width: 88,
@@ -460,7 +477,7 @@ loaded_rectangle:{
 	borderRadius: 10,
 },
 
-loaded_text:{
+claimed_text:{
 
 	fontFamily: 'Cochin',
 	fontStyle: 'normal',
