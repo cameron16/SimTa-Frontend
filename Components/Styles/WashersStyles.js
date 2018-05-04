@@ -1,4 +1,4 @@
-import React from 'react',
+import React from 'react'
 
 import { StyleSheet } from 'react-native'
 
@@ -61,23 +61,43 @@ menu_line3: {
 	borderColor: '#F2F2F2',
 },
 
-/* Washers Roosevelt Island */
-header_text: {
+
+Washers_text:{
+
 	position: 'absolute',
-	width: 148,
-	height: 58,
-	left: 113,
-	top: 4,
+	width: 109,
+	height: 44,
+	left: 133,
+	top: 8,
 
 	fontFamily: 'Cochin',
 	fontStyle: 'normal',
 	fontWeight: 'bold',
-	lineHeight: 'normal',
+	lineHeight: 40,
 	fontSize: 24,
 	textAlign: 'center',
 
 	color: '#F2F2F2',
 },
+
+Roosevelt_Island_text:{
+
+	position: 'absolute',
+	width: 148,
+	height: 25,
+	left: 118,
+	top: 30,
+
+	fontFamily: 'Cochin',
+	fontStyle: 'normal',
+	fontWeight: 'bold',
+	lineHeight: 35,
+	fontSize: 18,
+	textAlign: 'center',
+
+	color: '#F2F2F2',
+},
+
 
 /* Line 3 */
 washer1_line: {
@@ -95,13 +115,13 @@ washer1_line: {
 washer1_png: {
 	position: 'absolute',
 	width: 42,
-	height: 42,
+	height: 50,
 	left: 21,
-	top: 107,
+	top: 100,
 },
 
 /* 1: Available */
-washer1_text: {
+washer1_text1: {
 	position: 'absolute',
 	width: 208,
 	height: 45,
@@ -111,10 +131,26 @@ washer1_text: {
 	fontFamily: 'Cochin',
 	fontStyle: 'normal',
 	fontWeight: 'normal',
-	lineHeight: 'normal',
+	lineHeight: 40,
 	fontSize: 24,
 
 	color: '#000000',
+},
+
+washer1_text2: {
+	position: 'absolute',
+	width: 208,
+	height: 45,
+	left: 110,
+	top: 104,
+
+	fontFamily: 'Cochin',
+	fontStyle: 'normal',
+	fontWeight: 'normal',
+	lineHeight: 40,
+	fontSize: 24,
+
+	color: '#27AE60',
 },
 
 /* Line 3.1 */
@@ -133,13 +169,13 @@ washer2_line: {
 washer2_png: {
 	position: 'absolute',
 	width: 42,
-	height: 42,
+	height: 50,
 	left: 19,
-	top: 197,
+	top: 190,
 },
 
 /* 2: In Cycle - 13 min */
-washer2_text: {
+washer2_text1: {
 	position: 'absolute',
 	width: 235,
 	height: 45,
@@ -149,10 +185,26 @@ washer2_text: {
 	fontFamily: 'Cochin',
 	fontStyle: 'normal',
 	fontWeight: 'normal',
-	lineHeight: 'normal',
+	lineHeight: 40,
 	fontSize: 24,
 
 	color: '#000000',
+},
+
+washer2_text2: {
+	position: 'absolute',
+	width: 235,
+	height: 45,
+	left: 110,
+	top: 194,
+
+	fontFamily: 'Cochin',
+	fontStyle: 'normal',
+	fontWeight: 'normal',
+	lineHeight: 40,
+	fontSize: 24,
+
+	color: '#EB5757',
 },
 
 /* Line 3.2 */
@@ -171,13 +223,13 @@ washer3_line: {
 washer3_png: {
 	position: 'absolute',
 	width: 42,
-	height: 42,
+	height: 50,
 	left: 19,
-	top: 285,
+	top: 278,
 },
 
 /* 3: In Cycle - 14 min */
-washer3_text: {
+washer3_text1: {
 	position: 'absolute',
 	width: 235,
 	height: 45,
@@ -187,12 +239,27 @@ washer3_text: {
 	fontFamily: 'Cochin',
 	fontStyle: 'normal',
 	fontWeight: 'normal',
-	lineHeight: 'normal',
+	lineHeight: 40,
 	fontSize: 24,
 
 	color: '#000000',
 },
 
+washer3_text2: {
+	position: 'absolute',
+	width: 235,
+	height: 45,
+	left: 110,
+	top: 282,
+
+	fontFamily: 'Cochin',
+	fontStyle: 'normal',
+	fontWeight: 'normal',
+	lineHeight: 40,
+	fontSize: 24,
+
+	color: '#EB5757',
+},
 
 /* Line 3.3 */
 washer4_line: {
@@ -210,13 +277,13 @@ washer4_line: {
 washer4_png: {
 	position: 'absolute',
 	width: 42,
-	height: 42,
+	height: 50,
 	left: 19,
-	top: 363,
+	top: 356,
 },
 
 /* 4: Idle for 22 min */
-washer4_text: {
+washer4_text1: {
 	position: 'absolute',
 	width: 235,
 	height: 45,
@@ -226,9 +293,59 @@ washer4_text: {
 	fontFamily: 'Cochin',
 	fontStyle: 'normal',
 	fontWeight: 'normal',
-	lineHeight: 'normal',
+	lineHeight: 40,
 	fontSize: 24,
 
 	color: '#000000',
 },
+
+washer4_text2: {
+	position: 'absolute',
+	width: 235,
+	height: 45,
+	left: 110,
+	top: 360,
+
+	fontFamily: 'Cochin',
+	fontStyle: 'normal',
+	fontWeight: 'normal',
+	lineHeight: 40,
+	fontSize: 24,
+
+	color: '#F2994A',
+},
+
+load_rectangle:{
+
+	position: 'absolute',
+	width: 88,
+	height: 40,
+	left: 256,
+	top: 105,
+
+	backgroundColor: '#F2F2F2',
+	borderWidth: 2,
+	borderColor: '#2D9CDB',
+	//box-sizing: border-box,
+	borderRadius: 10,
+},
+
+
+load_text:{
+
+	position: 'absolute',
+	width: 49,
+	height: 33,
+	left: 280,
+	top: 104,
+
+	fontFamily: 'Cochin',
+	fontStyle: 'normal',
+	fontWeight: 'normal',
+	lineHeight: 40,
+	fontSize: 24,
+
+	color: '#828282',
+},
+
 })
