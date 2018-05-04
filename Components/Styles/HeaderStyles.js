@@ -6,35 +6,38 @@ import { StyleSheet } from 'react-native'
 export default StyleSheet.create({
 
 
-header_rectangle:{
-	// position: 'absolute',
-	// width: 375,
-	// height: 70,
-	// left: 0,
-	// top: -4,
-	// height:50,  
-	backgroundColor: '#2D9CDB',
 
+
+green_header_rectangle:{
+	backgroundColor: '#27AE60'
+},
+
+blue_header_rectangle:{  
+	backgroundColor: '#2D9CDB',
 },
 
 
 header_text:{
-
-	// position: 'absolute',
-	// width: 227,
-	// height: 43,
-	// left: 74,
-	// top: 17,
-
 	fontFamily: 'Cochin',
 	fontStyle: 'normal',
 	fontWeight: 'bold',
 	lineHeight: 55,
 	fontSize: 24,
 	textAlign: 'center',
+	color: '#F2F2F2',
+},
+
+back_text:{
+
+	fontFamily: 'Cochin',
+	fontStyle: 'normal',
+	fontWeight: 'bold',
+	fontSize: 20,
+	textAlign: 'center',
 
 	color: '#F2F2F2',
 },
+
 
 
 

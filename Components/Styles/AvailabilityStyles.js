@@ -223,6 +223,17 @@ export default StyleSheet.create({
 
   },
 
+  washer_notify_checkmark:{
+    position: 'absolute',
+    width: 50,
+    height: 50,
+    left: 40,
+    top: -63+ 212,
+
+    color: '#27AE60'
+
+  },
+
   washer_notify_text:{
     position: 'absolute',
     width: 268,
@@ -249,6 +260,17 @@ export default StyleSheet.create({
     borderColor:  '#2D9CDB',
     borderWidth: 2,
     borderRadius: 3,
+
+  },
+
+   washer_ping_checkmark:{
+    position: 'absolute',
+    width: 50,
+    height: 50,
+    left: 40,
+    top: -63+ 264,
+
+    color: '#27AE60'
 
   },
 

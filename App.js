@@ -18,8 +18,6 @@ import styles from './Components/Styles/HeaderStyles'
 
 
 
-
-
 const RootNavigator = StackNavigator({
 
   Login: {
@@ -27,7 +25,7 @@ const RootNavigator = StackNavigator({
     navigationOptions: {
       headerTitle: 'Welcome to SimTa',
       headerTitleStyle: styles.header_text,
-      headerStyle:  styles.header_rectangle, 
+      headerStyle:  styles.green_header_rectangle, 
       
     },
   },
@@ -36,7 +34,9 @@ const RootNavigator = StackNavigator({
     navigationOptions: {
       headerTitle: 'Sign Up',
       headerTitleStyle: styles.header_text,
-      headerStyle:  styles.header_rectangle, 
+      headerStyle:  styles.green_header_rectangle, 
+      headerBackTitleStyle: styles.back_text,
+      headerTintColor: '#F2F2F2'
       
     },
   },
@@ -45,9 +45,43 @@ const RootNavigator = StackNavigator({
     navigationOptions: {
       headerTitle: '77 Laundromat', 
       headerTitleStyle: styles.header_text,
-      headerStyle:  styles.header_rectangle, 
+      headerStyle:  styles.blue_header_rectangle,
+      headerBackTitleStyle: styles.back_text,
+      headerTintColor: '#F2F2F2' 
     },
   },
+  Washer:{
+    screen: WasherScreen,
+    navigationOptions: {
+      headerTitle: 'Washers - 77 Laundromat', 
+      headerTitleStyle: styles.header_text,
+      headerStyle:  styles.blue_header_rectangle, 
+      headerBackTitleStyle: styles.back_text,
+      headerTintColor: '#F2F2F2'
+    },
+  },
+  ApartmentLaundry:{
+    screen: ApartmentLaundryScreen,
+    navigationOptions: {
+      headerTitle: 'Apartment Laundry Room', 
+      headerTitleStyle: styles.header_text,
+      headerStyle:  styles.blue_header_rectangle, 
+      headerBackTitleStyle: styles.back_text,
+      headerTintColor: '#F2F2F2'
+    },
+  },
+  Laundry:{
+    screen: LaundryScreen,
+    navigationOptions: {
+      headerTitle: 'Laundry', 
+      headerTitleStyle: styles.header_text,
+      headerStyle:  styles.blue_header_rectangle, 
+      headerBackTitleStyle: styles.back_text,
+      headerTintColor: '#F2F2F2'
+    },
+  },
+
+
   
 });
 

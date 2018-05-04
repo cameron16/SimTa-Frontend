@@ -54,7 +54,7 @@ export default StyleSheet.create({
 		top: -63+207.48,
 
 		borderWidth: 2,
-		borderColor: '#2D9CDB',
+		borderColor: '#27AE60',
   	},
   	email_line:{
   		position: 'absolute',
@@ -64,7 +64,7 @@ export default StyleSheet.create({
 		top: -63+252.48,
 
 		borderWidth: 2,
-		borderColor: '#2D9CDB',
+		borderColor: '#27AE60',
   	},
 
 
@@ -77,7 +77,7 @@ export default StyleSheet.create({
 		top: -63+304.48,
 
 		borderWidth: 2,
-		borderColor: '#2D9CDB',
+		borderColor: '#27AE60',
   	},
   	
   	
@@ -90,7 +90,7 @@ export default StyleSheet.create({
 		top: -63+351.48,
 
 		borderWidth: 2,
-		borderColor: '#2D9CDB',
+		borderColor: '#27AE60',
 
   	},
 
@@ -237,7 +237,7 @@ export default StyleSheet.create({
 		left: 37,
 		top: -63+426,
 
-		backgroundColor: '#2D9CDB',
+		backgroundColor: '#27AE60',
 		borderRadius: 10,
 
 
@@ -269,7 +269,7 @@ export default StyleSheet.create({
 		left: 199,
 		top: -63+426,
 
-		backgroundColor: '#2D9CDB',
+		backgroundColor: '#27AE60',
 		borderRadius: 10,
   	},
 

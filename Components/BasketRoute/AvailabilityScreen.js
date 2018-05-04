@@ -2,6 +2,8 @@ import React from 'react';
 import {StyleSheet, Text, View, Button, TouchableOpacity } from 'react-native';
 
 import styles from "../Styles/AvailabilityStyles"
+import Entypo from 'react-native-vector-icons/Entypo';
+
 
 
 
@@ -11,8 +13,20 @@ import styles from "../Styles/AvailabilityStyles"
 
 
 export class AvailabilityScreen extends React.Component {
-
+  constructor(props) {
+      super(props);
+      this.state = { 
+        washer_notify: false,
+        washer_ping: false,
+     };
+    }
+    
 	 render() {
+        
+        //const button = this.state.notify_washer ? <Text>HellO</Text>  : <View></View>
+        const washer_notify_checkmark = this.state.washer_notify ? <Entypo name="check" size={25} style={styles.washer_notify_checkmark}/>  : <View></View>
+        const washer_ping_checkmark = this.state.washer_ping ? <Entypo name="check" size={25} style={styles.washer_ping_checkmark}/>  : <View></View>
+
 	    return (
 
 	       <View style = {styles.main_screen}>
@@ -27,10 +41,12 @@ export class AvailabilityScreen extends React.Component {
           <View style = {styles.washer_ellipse_avail} />
           <Text style = {styles.washer_available_text}>0 of 10 Available</Text>
 
-          <View style = {styles.washer_rectangle_notify} />
+          <TouchableOpacity activeOpacity = {1} style = {styles.washer_rectangle_notify} onPress ={() => this.setState({washer_notify: true})}></TouchableOpacity>  
+
           <Text style = {styles.washer_notify_text}>Notify When Washer Available</Text>
 
-          <View style = {styles.washer_rectangle_ping} />
+          <TouchableOpacity activeOpacity = {1} style = {styles.washer_rectangle_ping} onPress ={() => this.setState({washer_ping: true})}></TouchableOpacity>  
+
           <Text style = {styles.washer_ping_text}>Ping Idle Users</Text>
 
 
@@ -45,12 +61,17 @@ export class AvailabilityScreen extends React.Component {
           <View  style = {styles.dryer_polygon_avail} />
           <View style = {styles.dryer_ellipse_avail} />
           <Text style = {styles.dryer_available_text}>4 of 10 Available</Text>
-
-
+          {washer_notify_checkmark}
+          {washer_ping_checkmark}
+          
 	      </View>
 	    );
 	  }
 	}
+
+
+        //    <View style = {styles.washer_rectangle_notify} />
+
 
  // <View style = {styles.dryer_union_rectangle_2} />
  //          <View style = {styles.dryer_union_rectangle_1} />

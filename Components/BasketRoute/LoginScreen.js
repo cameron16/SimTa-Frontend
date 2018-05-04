@@ -36,14 +36,14 @@ export class LoginScreen extends React.Component {
 	    	
 		    	<Image source ={require('../../Pictures/simta_logo.png')} style = {styles.logo} />
 		    	<View style = {styles.email_line} />
-		    	<Foundation name="mail" size={30} color="#000000" style={styles.envelope_icon}/>
+		    	<Foundation name="mail" size={30} style={styles.envelope_icon}/>
 		    	<TextInput
 			        style={styles.email_text}
 			        placeholder = "email"
 			        onChangeText={(email) => this.setState({email})}
 			        value={this.state.email}/>
 		    	<View style = {styles.password_line} />
-		    	<EvilIcons name="lock" size={30} color="#000000" style={styles.lock_icon}/>
+		    	<EvilIcons name="lock" size={30} style={styles.lock_icon}/>
 
 		    	<TextInput
 			        style={styles.password_text}

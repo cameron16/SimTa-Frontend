@@ -65,7 +65,7 @@ email_line:{
 	top: -63+405.48,
 
 	borderWidth: 2,
-	borderColor: '#2D9CDB',
+	borderColor: '#27AE60',
 
 },
 
@@ -77,7 +77,7 @@ password_line:{
 	left: 55.99,
 	top: -63+448.48,
 
-	borderColor: '#2D9CDB' ,
+	borderColor: '#27AE60' ,
 	borderWidth: 2,
 
 },
@@ -224,7 +224,7 @@ lock_icon:{
 	width: 30,
 	height: 25,
 	left: 52,
-	top: 425,
+	top: -63+425,
 },
 
 
@@ -237,7 +237,7 @@ login_box:{
 	left: 82,
 	top: -63+475,
 
-	backgroundColor: '#2D9CDB',
+	backgroundColor: '#27AE60',
 	borderRadius: 10,
 
 },
