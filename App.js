@@ -11,6 +11,7 @@ import {AvailabilityScreen} from './Components/BasketRoute/AvailabilityScreen'
 import {WasherScreen} from './Components/BasketRoute/WasherScreen'
 import {ApartmentLaundryScreen} from './Components/BasketRoute/ApartmentLaundryScreen'
 import {LaundryScreen} from './Components/BasketRoute/LaundryScreen'
+import {SimTaHomeScreen} from './Components/BasketRoute/SimTaHomeScreen'
 
 import { DrawerItems, SafeAreaView } from 'react-navigation';
 
