@@ -41,12 +41,12 @@ export class SimTaHomeScreen extends React.Component {
 			    	<Text style = {styles.OVEN_text}>OVEN</Text>
 		    	</TouchableOpacity>
 
-		    	<TouchableOpacity style = {styles.FRIDGE_rectangle} onPress ={() => navigate('Laundry') }>
+		    	<TouchableOpacity style = {styles.FRIDGE_rectangle} onPress ={() => alert('Company Vision - SimTa is working on that!')  }>
 			    	<MaterialCommunityIcons name="fridge" size={50} color="#6FCF97" style={styles.Rectangle_fridge_body}/>
 			    	<Text style = {styles.FRIDGE_text}>FRIDGE</Text>
 		    	</TouchableOpacity>
 		    	
-		    	<TouchableOpacity style = {styles.DISHWASHER_rectangle} onPress ={() => navigate('Laundry') }>	
+		    	<TouchableOpacity style = {styles.DISHWASHER_rectangle} onPress ={() => alert('Company Vision - SimTa is working on that!') }>	
 		    	<Entypo name="box" size={50} color="#6FCF97" style={styles.dishwasher_body_box}/>
 		    	<Text style = {styles.Dishwasher_text}>DISHWASHER</Text>
 		    	</TouchableOpacity>

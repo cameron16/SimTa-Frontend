@@ -111,15 +111,19 @@ Home_rectangle:{
 	backgroundColor: '#2D9CDB',
 	//box-shadow: inset 0 4 4 rgba(0, 0, 0, 0.25),
 	borderRadius: 19,
+
+	flex: 1, 
+	justifyContent: 'center',
+	alignItems: 'center'
 },
 
 /* Home_text */
 Home_text:{
-	position: 'absolute',
-	width: 125,
-	height: 50,
-	left: 123,
-	top: -63+ 185,
+	// position: 'absolute',
+	// width: 125,
+	// height: 50,
+	// left: 123,
+	// top: -63+ 185,
 
 	fontFamily: 'Cochin',
 	fontStyle: 'normal',

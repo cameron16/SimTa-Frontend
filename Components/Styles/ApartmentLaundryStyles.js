@@ -134,7 +134,7 @@ Scan_QR_Code_text:{
 	// height: 25,
 	// left: 126,
 	// top: -65+ 368,
-
+	left: 5,
 	fontFamily: 'Cochin',
 	fontStyle: 'normal',
 	fontWeight: 'bold',
@@ -151,6 +151,7 @@ corner_box_img:{
 	height: 22,
 	// left: 93,
 	// top: -65+ 366,
+	left: -5
 },
 
 done_text:{

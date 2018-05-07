@@ -2,8 +2,10 @@ import React from 'react';
 
 import { StyleSheet } from 'react-native'
 
-export default StyleSheet.create({
+const name_line_top = -63+162.48;
+const name_text_top = -63+136;
 
+export default StyleSheet.create({
 	main_screen:{
 	    position: 'relative',
 		width: 375,
@@ -22,8 +24,6 @@ export default StyleSheet.create({
 		top: -63+-4,
 
 		backgroundColor: '#2D9CDB',
-
-
   	},
 
 
@@ -51,17 +51,31 @@ export default StyleSheet.create({
 		width: 265.02,
 		height: 0,
 		left: 55.99,
-		top: -63+207.48,
+		top: name_line_top,
 
 		borderWidth: 2,
 		borderColor: '#27AE60',
   	},
+
+  	phone_number_line:{
+  		position: 'absolute',
+		width: 265.02,
+		height: 0,
+		left: 55.99,
+		top: name_line_top+45,
+
+		borderWidth: 2,
+		borderColor: '#27AE60',
+  	},
+
+
+
   	email_line:{
   		position: 'absolute',
 		width: 265.02,
 		height: 0,
 		left: 55.99,
-		top: -63+252.48,
+		top: name_line_top+45*2,
 
 		borderWidth: 2,
 		borderColor: '#27AE60',
@@ -74,7 +88,7 @@ export default StyleSheet.create({
 		width: 265.02,
 		height: 0,
 		left: 55.99,
-		top: -63+304.48,
+		top: name_line_top+45*3,
 
 		borderWidth: 2,
 		borderColor: '#27AE60',
@@ -87,7 +101,7 @@ export default StyleSheet.create({
 		width: 265.02,
 		height: 0,
 		left: 55.99,
-		top: -63+351.48,
+		top: name_line_top+45*4,
 
 		borderWidth: 2,
 		borderColor: '#27AE60',
@@ -99,7 +113,16 @@ export default StyleSheet.create({
 		width: 30,
 		height: 50,
 		left: 52.54,
-		top: -63+176,
+		top: -63+131,
+  	},
+
+  	phone_body:{
+		position: 'absolute',
+		width: 30,
+		height: 50,
+		left: 52.54,
+		top: -63+178,
+
   	},
 
 
@@ -118,7 +141,7 @@ export default StyleSheet.create({
 		width: 30,
 		height: 30,
 		left: 53,
-		top: -63+281,
+		top: -63+275,
   	},
 
   	lock_confirm_pass:{
@@ -126,7 +149,7 @@ export default StyleSheet.create({
 		width: 30,
 		height: 30,
 		left: 53,
-		top: -63+328,
+		top: -63+320,
   	},
   	name_text:{
 
@@ -134,7 +157,27 @@ export default StyleSheet.create({
 		width: 52,
 		height: 25,
 		left: 161,
-		top: -63+181,
+		top: name_text_top,
+
+		fontFamily: 'Cochin',
+		fontStyle: 'normal',
+		fontWeight: 'bold',
+		lineHeight: 0,
+		fontSize: 18,
+		textAlign: 'center',
+
+		color: '#F2F2F2',
+		borderWidth: 0,
+		borderColor: '#000000',
+
+	},
+	phone_number_text:{
+
+		position: 'absolute',
+		width: 62,
+		height: 25,
+		left: 156,
+		top: name_text_top+45,
 
 		fontFamily: 'Cochin',
 		fontStyle: 'normal',
@@ -155,7 +198,7 @@ export default StyleSheet.create({
 		width: 180,
 		height: 25,
 		left: 97,
-		top: -63+227,
+		top: name_text_top+45*2,
 
 		fontFamily: 'Cochin',
 		fontStyle: 'normal',
@@ -177,7 +220,7 @@ export default StyleSheet.create({
 		width: 87,
 		height: 25,
 		left: 144,
-		top: -63+271,
+		top: name_text_top+45*3,
 
 		fontFamily: 'Cochin',
 		fontStyle: 'normal',
@@ -197,7 +240,7 @@ export default StyleSheet.create({
 		width: 162,
 		height: 25,
 		left: 106,
-		top: -63+318,
+		top: name_text_top+45*4,
 
 		fontFamily: 'Cochin',
 		fontStyle: 'normal',
@@ -214,11 +257,6 @@ export default StyleSheet.create({
 
 
   	search_laundromat_text:{
-  // 		position: 'absolute',
-		// width: 115,
-		// height: 25,
-		// left: 48,
-		// top: -63+435,
 
 		fontFamily: 'Cochin',
 		fontStyle: 'normal',
@@ -244,12 +282,6 @@ export default StyleSheet.create({
   	},
   	
   	add_your_apartment_text:{
-
-  // 		position: 'absolute',
-		// width: 115,
-		// height: 25,
-		// left: 210,
-		// top: -63+435,
 
 		fontFamily: 'Cochin',
 		fontStyle: 'normal',

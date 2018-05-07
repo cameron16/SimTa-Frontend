@@ -28,12 +28,9 @@ export class LaundryScreen extends React.Component {
 		    	
 		    	<Text style = {styles.subheader_text}>Where are you doing laundry?</Text>
 
-
-		    	<View style = {styles.Home_rectangle} />
+		    	<TouchableOpacity style = {styles.Home_rectangle} onPress ={() => alert('Company Vision - SimTa is working on that!') }>
 		    	<Text style = {styles.Home_text}>HOME</Text>
-
-		    	
-
+		    	</TouchableOpacity>
 
 		    	<TouchableOpacity style = {styles.Apartment_rectangle} onPress ={() => navigate('ApartmentLaundry') }>
 			    	<Text style = {styles.Apartment_text}>APARTMENT</Text>
