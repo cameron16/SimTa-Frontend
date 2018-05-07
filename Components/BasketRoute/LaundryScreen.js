@@ -20,6 +20,7 @@ export class LaundryScreen extends React.Component {
   	}
 
 	render() {
+		const {navigate} = this.props.navigation;
 	    return (
 	    	<TouchableWithoutFeedback onPress = {Keyboard.dismiss}>
 	    	<View style = {styles.main_screen}>
@@ -27,15 +28,21 @@ export class LaundryScreen extends React.Component {
 		    	
 		    	<Text style = {styles.subheader_text}>Where are you doing laundry?</Text>
 
+
 		    	<View style = {styles.Home_rectangle} />
 		    	<Text style = {styles.Home_text}>HOME</Text>
 
-		    	<View style = {styles.Apartment_rectangle} />
-		    	<Text style = {styles.Apartment_text}>APARTMENT</Text>
-
-		    	<View style = {styles.Laundromat_rectangle} />
-		    	<Text style = {styles.Laundromat_text}>LAUNDROMAT</Text>
 		    	
+
+
+		    	<TouchableOpacity style = {styles.Apartment_rectangle} onPress ={() => navigate('ApartmentLaundry') }>
+			    	<Text style = {styles.Apartment_text}>APARTMENT</Text>
+		    	</TouchableOpacity>	
+
+		    	<TouchableOpacity style = {styles.Laundromat_rectangle} onPress ={() => navigate('Availability') }>
+			    	<Text style = {styles.Laundromat_text}>LAUNDROMAT</Text>
+		    	</TouchableOpacity>	 
+
 	    		
 	    	</View>
 	    	</TouchableWithoutFeedback>

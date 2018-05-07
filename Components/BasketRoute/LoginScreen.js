@@ -52,7 +52,7 @@ export class LoginScreen extends React.Component {
 			        onChangeText={(password) => this.setState({password})}
 			        value={this.state.password}/>
 		    	
-		    	 <TouchableOpacity style = {styles.login_box} onPress ={() => navigate('Availability') }><Text style = {styles.login_text}>Login</Text></TouchableOpacity>	
+		    	 <TouchableOpacity style = {styles.login_box} onPress ={() => navigate('SimTaHome') }><Text style = {styles.login_text}>Login</Text></TouchableOpacity>	
 		    	 <Text style = {styles.new_text}>New?</Text>
 
 		    	 <TouchableOpacity style = {styles.sign_up_rectangle} onPress ={() => navigate('SignUp') }><Text style = {styles.sign_up_text}>Sign up</Text></TouchableOpacity>	

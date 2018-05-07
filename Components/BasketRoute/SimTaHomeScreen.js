@@ -21,37 +21,70 @@ export class SimTaHomeScreen extends React.Component {
   	}
 
 	render() {
+		const {navigate} = this.props.navigation;
 	    return (
 	    	<TouchableWithoutFeedback onPress = {Keyboard.dismiss}>
 	    	<View style = {styles.main_screen}>
 		    	
-		    	
-		    	<View style = {styles.LAUNDRY_rectangle} />
-		    	<Text style = {styles.LAUNDRY_text}>LAUNDRY</Text>
-		    	<MaterialIcons name="local-laundry-service" size={50} color="#6FCF97" style={styles.Rectangle_laundry_body}/>
 
-				<View style = {styles.OVEN_rectangle} />
-		    	<Text style = {styles.OVEN_text}>OVEN</Text>
-		    	<MaterialCommunityIcons name="stove" size={50} color="#6FCF97" style={styles.Rectangle_oven_body}/>
+		    	<TouchableOpacity style = {styles.LAUNDRY_rectangle} onPress ={() => navigate('Laundry') }>
+		    		<MaterialIcons name="local-laundry-service" size={50} color="#6FCF97" style={styles.Rectangle_laundry_body_2}/>
+			    	<Text style = {styles.LAUNDRY_text_2}>LAUNDRY</Text>
+		    	</TouchableOpacity>	
 
 
-		    	<View style = {styles.FRIDGE_rectangle} />
-		    	<Text style = {styles.FRIDGE_text}>FRIDGE</Text>
-		    	<MaterialCommunityIcons name="fridge" size={50} color="#6FCF97" style={styles.Rectangle_fridge_body}/>
 
-		    	<View style = {styles.DISHWASHER_rectangle} />
-		    	<Text style = {styles.Dishwasher_text}>DISHWASHER</Text>
-		    	<Image source ={require('../../Pictures/dishwasher_logo.png')} style = {styles.dishwasher_body} />
-		    	
-
-		    	
 		    	
 	    		
+		    	<TouchableOpacity style = {styles.OVEN_rectangle} onPress ={() => navigate('Laundry') }>
+			    	<MaterialCommunityIcons name="stove" size={50} color="#6FCF97" style={styles.Rectangle_oven_body}/>
+			    	<Text style = {styles.OVEN_text}>OVEN</Text>
+		    	</TouchableOpacity>
+
+		    	<TouchableOpacity style = {styles.FRIDGE_rectangle} onPress ={() => navigate('Laundry') }>
+			    	<MaterialCommunityIcons name="fridge" size={50} color="#6FCF97" style={styles.Rectangle_fridge_body}/>
+			    	<Text style = {styles.FRIDGE_text}>FRIDGE</Text>
+		    	</TouchableOpacity>
+		    	
+		    	<TouchableOpacity style = {styles.DISHWASHER_rectangle} onPress ={() => navigate('Laundry') }>	
+		    	<Entypo name="box" size={50} color="#6FCF97" style={styles.dishwasher_body_box}/>
+		    	<Text style = {styles.Dishwasher_text}>DISHWASHER</Text>
+		    	</TouchableOpacity>
+		    	
+
+		    	
+		    	
+	    		 
 	    	</View>
 	    	</TouchableWithoutFeedback>
 	);
 	}
 }
+
+
+// <View style = {styles.LAUNDRY_rectangle} />
+// 			    	<Text style = {styles.LAUNDRY_text}>LAUNDRY</Text>
+// 			   		<MaterialIcons name="local-laundry-service" size={50} color="#6FCF97" style={styles.Rectangle_laundry_body}/>
+
+
+		    //	<Image source ={require('../../Pictures/dishwasher_logo.png')} style = {styles.dishwasher_body} />
+
+
+
+
+// <View style = {styles.LAUNDRY_rectangle} />
+// 		    	<Text style = {styles.LAUNDRY_text}>LAUNDRY</Text>
+// 		   		<MaterialIcons name="local-laundry-service" size={50} color="#6FCF97" style={styles.Rectangle_laundry_body}/>
+
+
+
+
+// <View style = {styles.component}>
+// 		    		<View style = {styles.LAUNDR_rectangle} />
+// 		    		<Text style = {styles.LAUNDRY_text} />
+
+// 		    	</View>
+
 
 //<View style = {styles.rectangle_header} />
 //<Text style = {styles.Laundry_text}>Laundry</Text>

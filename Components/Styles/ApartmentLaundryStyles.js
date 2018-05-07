@@ -19,7 +19,7 @@ rectangle_header:{
 	width: 375,
 	height: 70,
 	left: 0,
-	top: -4,
+	top: -65+ -4,
 
 	backgroundColor: '#2D9CDB',
 //box-shadow: 0 4 4 rgba(0, 0, 0, 0.25),
@@ -31,7 +31,7 @@ Apartment_Laundry_Room_text:{
 	width: 313,
 	height: 33,
 	left: 31,
-	top: 17,
+	top: -65+ 17,
 
 	fontFamily: 'Cochin',
 	fontStyle: 'normal',
@@ -49,10 +49,15 @@ QR_code_rectangle:{
 	width: 241,
 	height: 86,
 	left: 65,
-	top: 334,
+	top: -65+ 334,
 
 	backgroundColor: '#2D9CDB',
 	borderRadius: 5,
+
+	flex: 1, 
+	justifyContent: 'center',
+	alignItems: 'center',
+	flexDirection: 'row'
 },
 
 apartment_code_rectangle:{
@@ -61,10 +66,15 @@ apartment_code_rectangle:{
 	width: 241,
 	height: 80,
 	left: 65,
-	top: 156,
+	top: -65+ 156,
 
 	backgroundColor: '#2D9CDB',
 	borderRadius: 5,
+
+	flex: 1, 
+	justifyContent: 'center',
+	alignItems: 'center'
+	
 },
 
 done_rectangle:{
@@ -73,7 +83,7 @@ done_rectangle:{
 	width: 169,
 	height: 53,
 	left: 93,
-	top: 527,
+	top: -65+ 527,
 
 	backgroundColor: '#2D9CDB',
 	borderRadius: 10,
@@ -81,11 +91,11 @@ done_rectangle:{
 
 apartment_code_text:{
 
-	position: 'absolute',
-	width: 202,
-	height: 25,
-	left: 75,
-	top: 188,
+	// position: 'absolute',
+	// width: 202,
+	// height: 25,
+	// left: 75,
+	// top: -65+ 188,
 
 	fontFamily: 'Cochin',
 	fontStyle: 'normal',
@@ -104,7 +114,7 @@ OR_text:{
 	width: 55,
 	height: 33,
 	left: 150,
-	top: 268,
+	top: -65+ 268,
 
 	fontFamily: 'Cochin',
 	fontStyle: 'normal',
@@ -119,11 +129,11 @@ OR_text:{
 
 Scan_QR_Code_text:{
 
-	position: 'absolute',
-	width: 123,
-	height: 25,
-	left: 126,
-	top: 368,
+	// position: 'absolute',
+	// width: 123,
+	// height: 25,
+	// left: 126,
+	// top: -65+ 368,
 
 	fontFamily: 'Cochin',
 	fontStyle: 'normal',
@@ -136,11 +146,11 @@ Scan_QR_Code_text:{
 },
 
 corner_box_img:{
-	position: 'absolute',
+	// position: 'absolute',
 	width: 22,
 	height: 22,
-	left: 93,
-	top: 366,
+	// left: 93,
+	// top: -65+ 366,
 },
 
 done_text:{
@@ -149,7 +159,7 @@ done_text:{
 	width: 47,
 	height: 25,
 	left: 152,
-	top: 543,
+	top: -65+ 543,
 
 	fontFamily: 'Cochin',
 	fontStyle: 'normal',

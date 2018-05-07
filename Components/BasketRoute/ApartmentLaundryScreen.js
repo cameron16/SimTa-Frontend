@@ -25,14 +25,16 @@ export class ApartmentLaundryScreen extends React.Component {
 	    	<View style = {styles.main_screen}>
 		    	
 		    	
-		    	<View style = {styles.QR_code_rectangle} />
-		    	<Text style = {styles.Scan_QR_Code_text}> Scan QR Code</Text>
+		    	<View style = {styles.QR_code_rectangle}>
 		    	<Image source ={require('../../Pictures/square_corners.png')} style = {styles.corner_box_img} />
-		    	
+
+		    	<Text style = {styles.Scan_QR_Code_text}> Scan QR Code</Text>
+		    	</View> 
 		    	<Text style = {styles.OR_text}>OR</Text>
 
-		    	<View style = {styles.apartment_code_rectangle} />
+		    	<View style = {styles.apartment_code_rectangle}>
 		    	<Text style = {styles.apartment_code_text}>Enter Apartment Code</Text>
+		    	</View>
 		    	
 
 		    	<View style = {styles.done_rectangle} />

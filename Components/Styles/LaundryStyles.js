@@ -20,7 +20,7 @@ rectangle_header:{
 	width: 375,
 	height: 112,
 	left: 0,
-	top: -4,
+	top: -63+ -4,
 
 	backgroundColor: '#2D9CDB',
 //box-shadow: 0 4 4 rgba(0, 0, 0, 0.25),
@@ -32,7 +32,7 @@ Laundry_text:{
 	width: 150,
 	height: 50,
 	left: 115,
-	top: 17,
+	top: -63+ 17,
 
 	fontFamily: 'Cochin',
 	fontStyle: 'normal',
@@ -50,7 +50,7 @@ subheader_text:{
 	width: 355,
 	height: 25,
 	left: 15,
-	top: 97,
+	top: -63+ 97,
 
 	fontFamily: 'Cochin',
 	fontStyle: 'normal',
@@ -68,7 +68,7 @@ position: 'absolute',
 width: 40,
 height: 12.04,
 left: 56,
-top: 15,
+top: -63+ 15,
 
 backgroundColor: #56CCF2,
 border: 1 solid #000000,
@@ -82,7 +82,9 @@ Rectangle_laundrymachine:{
 	width: 42,
 	height: 38.89,
 	left: 55,
-	top: 26.11,
+	top: -63+ 26.11,
+
+
 },
 /*
 Ellipse_laundrymahcine
@@ -91,7 +93,7 @@ position: 'absolute',
 width: 24,
 height: 21.3,
 left: 64,
-top: 32.59,
+top: -63+ 32.59,
 
 backgroundColor: #56CCF2,
 border: 1 solid #000000,
@@ -104,7 +106,7 @@ Home_rectangle:{
 	width: 320,
 	height: 126,
 	left: 28,
-	top: 142,
+	top: -63+ 142,
 
 	backgroundColor: '#2D9CDB',
 	//box-shadow: inset 0 4 4 rgba(0, 0, 0, 0.25),
@@ -117,7 +119,7 @@ Home_text:{
 	width: 125,
 	height: 50,
 	left: 123,
-	top: 185,
+	top: -63+ 185,
 
 	fontFamily: 'Cochin',
 	fontStyle: 'normal',
@@ -135,20 +137,26 @@ Apartment_rectangle:{
 	width: 320,
 	height: 126,
 	left: 28,
-	top: 297,
+	top: -63+ 297,
 
 	backgroundColor: '#2D9CDB',
 	//box-shadow: inset 0 4 4 rgba(0, 0, 0, 0.25),
 	borderRadius: 19,
+
+
+	flex: 1, 
+	justifyContent: 'center',
+	alignItems: 'center'
+
 },
 
 /* Apartment_text */
 Apartment_text:{
-	position: 'absolute',
-	width: 238,
-	height: 50,
-	left: 70,
-	top: 340,
+	// position: 'absolute',
+	// width: 238,
+	// height: 50,
+	// left: 70,
+	// top: -63+ 340,
 
 	fontFamily: 'Cochin',
 	fontStyle: 'normal',
@@ -166,20 +174,25 @@ Laundromat_rectangle:{
 	width: 320,
 	height: 126,
 	left: 28,
-	top: 453,
+	top: -63+ 453,
 
 	backgroundColor: '#2D9CDB',
 	//box-shadow: inset 0 4 4 rgba(0, 0, 0, 0.25),
 	borderRadius: 19,
+
+	flex: 1, 
+	justifyContent: 'center',
+	alignItems: 'center'
+	 
 },
 
 /* Laundromat_text */
 Laundromat_text:{
-	position: 'absolute',
-	width: 275,
-	height: 50,
-	left: 52,
-	top: 496,
+	// position: 'absolute',
+	// width: 275,
+	// height: 50,
+	// left: 52,
+	// top: -63+ 496,
 
 	fontFamily: 'Cochin',
 	fontStyle: 'normal',

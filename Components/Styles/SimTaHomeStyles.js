@@ -53,6 +53,13 @@ LAUNDRY_rectangle:{
 	backgroundColor: '#27AE60',
 	//box-shadow: inset 0 4 4 rgba(0, 0, 0, 0.25),
 	borderRadius: 19,
+
+
+	flex: 1, 
+	justifyContent: 'center',
+	alignItems: 'center',
+
+	flexDirection: 'row',
 },
 
 /* Rectangle 3_laundrymachine.1 
@@ -78,6 +85,14 @@ Rectangle_laundry_body:{
 	top: -63+130,
 },
 
+Rectangle_laundry_body_2:{
+	//position: 'absolute',
+	// width: 42,
+	// height: 52,
+	// left: 15,
+	// top: 30,
+	left: -15,
+},
 /* Ellipse_laundrymahcine 
 
 position: 'absolute',
@@ -109,6 +124,28 @@ LAUNDRY_text:{
 	color: '#F2F2F2',
 },
 
+
+LAUNDRY_text_2:{
+	// position: 'absolute',
+	// // width: 195,
+	// // height: 50,
+	// // left: 110,
+	// top: 35,
+	// left: 60,
+	//flex: 1.0,
+	//left: 10, 
+	fontFamily: 'Cochin',
+	fontStyle: 'normal',
+	fontWeight: 'bold',
+	lineHeight: 40,
+	fontSize: 36,
+	textAlign: 'center',
+
+	color: '#F2F2F2',
+},
+
+
+
 /* DISHWASHER_rectangle */
 DISHWASHER_rectangle:{
 	position: 'absolute',
@@ -120,15 +157,21 @@ DISHWASHER_rectangle:{
 	backgroundColor: '#27AE60',
 	//box-shadow: inset 0 4 4 rgba(0, 0, 0, 0.25),
 	borderRadius: 19,
+
+	flex: 1, 
+	justifyContent: 'center',
+	alignItems: 'center',
+
+	flexDirection: 'row',
 },
 
 /* Dishwasher_text */
 Dishwasher_text:{
-	position: 'absolute',
-	width: 247,
-	height: 50,
-	left: 89,
-	top: -63+548,
+	// position: 'absolute',
+	// width: 247,
+	// height: 50,
+	// left: 89,
+	// top: -63+548,
 
 	fontFamily: 'Cochin',
 	fontStyle: 'normal',
@@ -151,6 +194,12 @@ OVEN_rectangle:{
 	backgroundColor: '#27AE60',
 	//box-shadow: inset 0 4 4 rgba(0, 0, 0, 0.25),
 	borderRadius: 19,
+
+	flex: 1, 
+	justifyContent: 'center',
+	alignItems: 'center',
+
+	flexDirection: 'row',
 },
 
 /* Rectangle 4_oven
@@ -172,9 +221,11 @@ Rectangle_oven_body:{
 	position: 'absolute',
 	width: 59,
 	height: 42,
-	left: 50,
-	top: -63+267,
+	left: 40,
+	top: 30,
+	//top: -63+267,
 },
+
 
 /* Rectangle 3_oven 
 
@@ -192,11 +243,13 @@ borderRadius: 2, */
 
 /* OVEN_text */
 OVEN_text:{
-	position: 'absolute',
-	width: 120,
-	height: 50,
-	left: 125,
-	top: -63+274,
+	// position: 'absolute',
+	// width: 120,
+	// height: 50,
+	// left: 125,
+	// top: -63+274,
+
+	left: 7,
 
 	fontFamily: 'Cochin',
 	fontStyle: 'normal',
@@ -219,15 +272,22 @@ FRIDGE_rectangle:{
 	backgroundColor: '#27AE60',
 	//box-shadow: inset 0 4 4 rgba(0, 0, 0, 0.25),
 	borderRadius: 19,
+
+	flex: 1, 
+	justifyContent: 'center',
+	alignItems: 'center',
+
+	flexDirection: 'row',
 },
 
 /* Rectangle_fridge_body */
 Rectangle_fridge_body:{
-	position: 'absolute',
-	width: 41,
-	height: 54,
-	left: 50,
-	top: -63+404,
+	// position: 'absolute',
+	// width: 41,
+	// height: 54,
+	// left: 50,
+	// top: -63+404,
+	left: -20,
 },
 
 /* Rectangle 3_fridge 
@@ -273,12 +333,13 @@ borderRadius: 2,
 
 /* FRIDGE_text */
 FRIDGE_text:{
-	position: 'absolute',
-	width: 150,
-	height: 50,
-	left: 120,
-	top: -63+412,
+	// position: 'absolute',
+	// width: 150,
+	// height: 50,
+	// left: 120,
+	// top: -63+412,
 
+	left: -5, 
 	fontFamily: 'Cochin',
 	fontStyle: 'normal',
 	fontWeight: 'bold',
@@ -289,6 +350,9 @@ FRIDGE_text:{
 	color: '#F2F2F2',
 },
 
+
+
+
 /* dishwasher_body */
 dishwasher_body:{
 	position: 'absolute',
@@ -297,6 +361,18 @@ dishwasher_body:{
 	left: 47,
 	top: -63+550,
 },
+
+
+dishwasher_body_box:{
+	// position: 'absolute',
+	// width: 60,
+	// height: 60,
+	// left:40,
+	// top: -63+542,
+	left: -15,
+},
+
+
 
 /* dishwasher_line_top 
 
@@ -345,4 +421,125 @@ backgroundColor: '#27AE60',
 border: 1 solid #000000,
 box-sizing: border-box,*/
 
-})
+
+
+
+
+// component :{
+
+// position: 'absolute',
+// width: 320,
+// height: 110,
+// left: 28,
+// top: -63+99,
+
+// },
+
+
+
+
+
+// LAUNDR_rectangle :{
+
+// position: 'absolute',
+// left: 0, //0%;
+// right: 0, //0%;
+// top: 0, //0%;
+// bottom: 0, //0%;
+
+// backgroundColor: '#27AE60',
+// // box-shadow: inset 0 4 4 rgba(0, 0, 0, 0.25);
+// borderRadius: 19,
+
+// },
+
+
+
+// LAUNDRY_text :{
+
+// position: 'absolute',
+// left: 84.92, //26.56%,
+// right: 260, //18.75%;
+// top: 38,//34.55%;
+// bottom: 88, //20%;
+
+// fontFamily: 'Cochin',
+// fontStyle: 'normal',
+// fontWeight: 'bold',
+// lineHeight: 40,
+// fontSize: 36,
+// textAlign: 'center',
+
+// color: '#F2F2F2',
+
+// },
+
+
+
+});
+
+
+// /* Rectangle 3_laundrymachine.1 */
+
+// position: absolute;
+// left: 6.56%;
+// right: 80.94%;
+// top: 30.91%;
+// bottom: 57.27%;
+
+// background: #6FCF97;
+// border: 1 solid #000000;
+// box-sizing: border-box;
+// border-radius: 2;
+
+
+// /* Rectangle_laundry_body */
+
+// position: absolute;
+// left: 6.25%;
+// right: 80.62%;
+// top: 41.82%;
+// bottom: 20%;
+
+// background: #6FCF97;
+// border: 1 solid #000000;
+// box-sizing: border-box;
+// border-radius: 5;
+
+
+//  Ellipse_laundrymahcine 
+
+// position: absolute;
+// left: 9.06%;
+// right: 83.44%;
+// top: 48.18%;
+// bottom: 30.91%;
+
+// background: #6FCF97;
+// border: 1 solid #000000;
+// box-sizing: border-box;
+
+
+// /* LAUNDRY_text */
+
+// position: absolute;
+// left: 26.56%;
+// right: 18.75%;
+// top: 34.55%;
+// bottom: 20%;
+
+// font-family: Open Sans;
+// font-style: normal;
+// font-weight: bold;
+// line-height: normal;
+// font-size: 36;
+// text-align: center;
+
+// color: #F2F2F2;
+
+
+
+
+
+
+

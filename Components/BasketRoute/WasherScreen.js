@@ -19,29 +19,42 @@ export class WasherScreen extends React.Component {
 	    this.state = {
 
 	    	washer_claimed: false,
+	    	washer_available: true,
 
 	    }; 
   	}
 
 	render() {
 
-		const claimed_button = this.state.washer_claimed? <TouchableOpacity activeOpacity = {1} style = {styles.claimed_rectangle}><Text style = {styles.claimed_text}>claimed</Text></TouchableOpacity>	
-  : <View></View>
+		// const claimed_button = this.state.washer_available ? <View></View> : claimed_2
+		// const claimed_2 = this.state.washer_claimed ? <TouchableOpacity activeOpacity = {1} style = {styles.claimed_rectangle}><Text style = {styles.claimed_text}>claimed</Text></TouchableOpacity>	: <View></View>
+		if (this.state.washer_available == false && this.state.washer_claimed == true){
+			claimed_button = <TouchableOpacity activeOpacity = {1} style = {styles.claimed_rectangle}><Text style = {styles.claimed_text}>claimed</Text></TouchableOpacity>
+		}
+		else if (this.state.washer_available == false && this.state.washer_claimed == false){
+			claimed_button = <TouchableOpacity style = {styles.claim_rectangle} onPress ={() => this.setState({washer_claimed: true}) }><Text style = {styles.claim_text}>claim</Text></TouchableOpacity>
+		}
+		else{
+			claimed_button = <View></View>
+		}
+		//const claimed_button = this.state.washer_claimed ? <TouchableOpacity activeOpacity = {1} style = {styles.claimed_rectangle}><Text style = {styles.claimed_text}>claimed</Text></TouchableOpacity>	
+  //: <View></View>
+
+  		const machine_color = this.state.washer_available ? <MaterialIcons name="local-laundry-service" size={50} color="#27AE60" style={styles.washer1_png}/> : <MaterialIcons name="local-laundry-service" size={50} color="#9B51E0" style={styles.washer1_png}/>
+  		const machine_text = this.state.washer_available ? <Text style = {styles.washer1_text2_1}>Available </Text> : <Text style = {styles.washer1_text2_2}>Starting... </Text>
 
 	    return (
-	    	<TouchableWithoutFeedback onPress = {Keyboard.dismiss}>
+	    	<TouchableWithoutFeedback onPress = {Keyboard.dismiss}> 
 	    	<View style = {styles.main_screen}>
 		    	
 		    	<Text style = {styles.Roosevelt_Island_text}>Roosevelt Island</Text>
 		    	
 		    	<View style = {styles.washer1_line} />
 		    	<Text style = {styles.washer1_text1}>1: </Text>
-		    	{/*<Text style = {styles.washer1_text2_1}>Available </Text>*/}
-		    	<Text style = {styles.washer1_text2_2}>Starting... </Text>
-		    	{/*<MaterialIcons name="local-laundry-service" size={50} color="#27AE60" style={styles.washer1_png}/>*/}
-		    	<MaterialIcons name="local-laundry-service" size={50} color="#9B51E0" style={styles.washer1_png}/>
-		    	<TouchableOpacity style = {styles.claim_rectangle} onPress ={() => this.setState({washer_claimed: true}) }><Text style = {styles.claim_text}>claim</Text></TouchableOpacity>
+		    	
 		    	{claimed_button}
+		    	{machine_color}
+		    	{machine_text}
 		    	
 		    	
 		    	<View style = {styles.washer2_line} />
@@ -64,11 +77,17 @@ export class WasherScreen extends React.Component {
 		    	<Text style = {styles.washer5_text2}>Idle for 16 min</Text>
 		    	<MaterialIcons name="local-laundry-service" size={50} color="#F2994A" style={styles.washer5_png}/>
 
-		    	<View style = {styles.washer6_line} />
+		    	<View style = {styles.washer6_line} /> 
 		    	<Text style = {styles.washer6_text1}>6: </Text>
-		    	<Text style = {styles.washer6_text2}>Idle for 15 min</Text>
+		    	
+
+
+		    	<TouchableOpacity activeOpacity={1} onPress = {()=> {this.setState({washer_available:false})} }><Text style = {styles.washer6_text2}>Idle for 15 min</Text></TouchableOpacity>
+ 				
+ 				<TouchableOpacity style = {{position: 'absolute',width: 375,height: 50,left: -2,top: -63+580,borderColor: '#F2F2F2'}} activeOpacity={1} onPress = {()=> {this.setState({washer_available:false})} }></TouchableOpacity>
+
+
 		    	<MaterialIcons name="local-laundry-service" size={50} color="#F2994A" style={styles.washer6_png}/>
-		    	{loaded_button}
 		    	
 	    		
 	    	</View>
@@ -76,6 +95,18 @@ export class WasherScreen extends React.Component {
 	);
 	}
 }
+
+
+		    	//<TouchableOpacity style = {styles.claim_rectangle} onPress ={() => this.setState({washer_claimed: true}) }><Text style = {styles.claim_text}>claim</Text></TouchableOpacity>
+
+
+// this.setState({washer_available:false})
+
+// {/*<Text style = {styles.washer1_text2_1}>Available </Text>*/}
+// 		    	{//<Text style = {styles.washer1_text2_2}>Starting... </Text>}
+// 		    	{//<MaterialIcons name="local-laundry-service" size={50} color="#27AE60" style={styles.washer1_png}/>}
+// 		    	{//<MaterialIcons name="local-laundry-service" size={50} color="#9B51E0" style={styles.washer1_png}/>}
+
 
 //<TouchableOpacity style = {styles.load_rectangle} onPress ={() => this.setState({washer_loaded:true}) }><Text style = {styles.load_text}>load</Text></TouchableOpacity>	
 		  

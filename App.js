@@ -44,7 +44,7 @@ const RootNavigator = StackNavigator({
   Availability:{
     screen: AvailabilityScreen,
     navigationOptions: {
-      headerTitle: '77 Laundromat', 
+      headerTitle: '550 West 45th', 
       headerTitleStyle: styles.header_text,
       headerStyle:  styles.blue_header_rectangle,
       headerBackTitleStyle: styles.back_text,
@@ -54,7 +54,7 @@ const RootNavigator = StackNavigator({
   Washer:{
     screen: WasherScreen,
     navigationOptions: {
-      headerTitle: 'Washers - 77 Laundromat', 
+      headerTitle: 'Washers', 
       headerTitleStyle: styles.header_text,
       headerStyle:  styles.blue_header_rectangle, 
       headerBackTitleStyle: styles.back_text,
@@ -81,6 +81,17 @@ const RootNavigator = StackNavigator({
       headerTintColor: '#F2F2F2'
     },
   },
+  SimTaHome:{
+    screen: SimTaHomeScreen,
+    navigationOptions: {
+      headerTitle: 'Your Appliances', 
+      headerTitleStyle: styles.header_text,
+      headerStyle:  styles.green_header_rectangle, 
+      headerBackTitleStyle: styles.back_text,
+      headerTintColor: '#F2F2F2'
+    },
+  }, 
+
 
 
   
