@@ -22,7 +22,7 @@ import styles from './Components/Styles/HeaderStyles'
 const RootNavigator = StackNavigator({
 
   Login: {
-    screen: SignUpScreen,
+    screen: LoginScreen,
     navigationOptions: {
       headerTitle: 'Welcome to SimTa',
       headerTitleStyle: styles.header_text,
@@ -41,6 +41,16 @@ const RootNavigator = StackNavigator({
       
     },
   },
+  SimTaHome:{
+    screen: SimTaHomeScreen,
+    navigationOptions: {
+      headerTitle: 'Your Appliances', 
+      headerTitleStyle: styles.header_text,
+      headerStyle:  styles.green_header_rectangle, 
+      headerLeft: null,
+      headerTintColor: '#F2F2F2'
+    },
+  }, 
   Availability:{
     screen: AvailabilityScreen,
     navigationOptions: {
@@ -81,16 +91,7 @@ const RootNavigator = StackNavigator({
       headerTintColor: '#F2F2F2'
     },
   },
-  SimTaHome:{
-    screen: SimTaHomeScreen,
-    navigationOptions: {
-      headerTitle: 'Your Appliances', 
-      headerTitleStyle: styles.header_text,
-      headerStyle:  styles.green_header_rectangle, 
-      headerBackTitleStyle: styles.back_text,
-      headerTintColor: '#F2F2F2'
-    },
-  }, 
+  
 
 
 

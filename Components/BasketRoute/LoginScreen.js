@@ -24,7 +24,48 @@ export class LoginScreen extends React.Component {
 	    	password: ""
 
 	   };
+	   this._sendLoginPost = this._sendLoginPost.bind(this);
+	   this._checkLogin = this._checkLogin.bind(this);
+
   	}
+
+  	_sendLoginPost(){
+  		const {navigate} = this.props.navigation;
+  		fetch("https://smartapp-196617.appspot.com/user", {
+          method: "PUT",
+          headers: {
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify({
+            "email": this.state.email,
+            "password": this.state.password
+          })
+        }).then(function(response){
+            if (response.status >= 400){
+                Alert.alert(
+                  'This email does not match this password'
+                ) 
+                console.log(response);
+              } 
+              else{
+              	console.log('this worked')
+              	navigate('SimTaHome');
+  			}
+  		})
+    }
+    _checkLogin(){
+    	if (this.state.email.length == 0){
+    		Alert.alert('Please enter your email address')
+    	}
+    	else if (this.state.password.length == 0){
+    		Alert.alert('Please enter your password')
+    	}
+    	else{
+    		this._sendLoginPost();
+    	}
+
+    }
+
  
 	render() {
 		    const {navigate} = this.props.navigation;
@@ -50,9 +91,10 @@ export class LoginScreen extends React.Component {
 			        style={styles.password_text}
 			        placeholder = "password"
 			        onChangeText={(password) => this.setState({password})}
+			        secureTextEntry={true}
 			        value={this.state.password}/>
 		    	
-		    	 <TouchableOpacity style = {styles.login_box} onPress ={() => navigate('SimTaHome') }><Text style = {styles.login_text}>Login</Text></TouchableOpacity>	
+		    	 <TouchableOpacity style = {styles.login_box} onPress ={() => this._checkLogin() }><Text style = {styles.login_text}>Login</Text></TouchableOpacity>	
 		    	 <Text style = {styles.new_text}>New?</Text>
 
 		    	 <TouchableOpacity style = {styles.sign_up_rectangle} onPress ={() => navigate('SignUp') }><Text style = {styles.sign_up_text}>Sign up</Text></TouchableOpacity>	

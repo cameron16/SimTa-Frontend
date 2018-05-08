@@ -29,21 +29,46 @@ export class SignUpScreen extends React.Component {
 	    	password: "",
 	    	confirm_password: ""
 	   };
+	   this._sendSignUpPost = this._sendSignUpPost.bind(this);
 	   this._checkSignUp = this._checkSignUp.bind(this);
-
   	}
 
-
+  _sendSignUpPost(){
+  	const {navigate} = this.props.navigation;
+  	fetch("https://smartapp-196617.appspot.com/user", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+              "name": this.state.name,
+              "phone_number":this.state.phone_number,
+              "email": this.state.email,
+              "password": this.state.password,
+            })
+          }).then(function(response){
+            if (response.status >= 400){
+              console.log("there was an error")
+              Alert.alert(
+                'The email you entered is already in use'
+              ) 
+            } 
+            else{
+              console.log("this worked")
+              navigate('SimTaHome');
+          	}
+   		}) 
+       
+      }
 
   _checkSignUp(){
-    const {navigate} = this.props.navigation;
 
     if (this.state.name.length == 0){
       Alert.alert(
          'Please enter your name' 
       )
     }
-    else if (this.state.phone_number.length!=0){
+    else if (this.state.phone_number.length!=10){
       Alert.alert(
          'Please enter your 10-digit phone number' 
       )
@@ -55,7 +80,7 @@ export class SignUpScreen extends React.Component {
     }
     else if (this.state.password.length < 4){
       Alert.alert(
-         'Please enter your password' 
+         'Your password must be at least 4 characters long' 
       )
     }
     else if (this.state.password != this.state.confirm_password){
@@ -64,10 +89,9 @@ export class SignUpScreen extends React.Component {
       )
     }
     else{
-
-
-    	
-    }
+		this._sendSignUpPost();
+     }
+ }
 
 	render() {
 	    return (
@@ -78,7 +102,10 @@ export class SignUpScreen extends React.Component {
 		    	
 		    	<TextInput
 			        style={styles.name_text}
+			        placeholderStyle={styles.name_text_place}
 			        placeholder = "name"
+			        placeholderTextColor = '#b7b5b5'
+
 			        onChangeText={(name) => this.setState({name})}
 			        value={this.state.name}/>
 		    	<View style = {styles.name_line} />
@@ -86,14 +113,19 @@ export class SignUpScreen extends React.Component {
 
 		    	<TextInput
 			        style={styles.phone_number_text}
-			        placeholder = "phone #"
+			        placeholder = "phone #" 
+			        placeholderTextColor = '#b7b5b5'
 			        onChangeText={(phone_number) => this.setState({phone_number})}
+			        keyboardType = 'number-pad' 
+			        maxLength={10}
 			        value={this.state.phone_number}/>
+
 		    	<View style = {styles.phone_number_line} />
 		    	
 		    	<TextInput
 			        style={styles.email_text}
 			        placeholder = "email"
+			        placeholderTextColor = '#b7b5b5'
 			        onChangeText={(email) => this.setState({email})}
 			        value={this.state.email}/>
 		    	<View style = {styles.email_line} />
@@ -101,15 +133,21 @@ export class SignUpScreen extends React.Component {
 		    	<TextInput
 			        style={styles.password_text}
 			        placeholder = "password"
+			        placeholderTextColor = '#b7b5b5'
 			        onChangeText={(password) => this.setState({password})}
+			        secureTextEntry={true}
+
+
 			        value={this.state.password}/>
 		    	<View style = {styles.password_line} />
 
 		    	<TextInput
 			        style={styles.confirm_password_text}
 			        placeholder = "confirm password"
-			        onChangeText={(confirm_password) => this.setState({confirm_password})}
-			        value={this.state.confirm_password}/>
+			        placeholderTextColor = '#b7b5b5'
+			        onChangeText={(confirm_password) => this.setState({confirm_password})} 
+			        secureTextEntry={true}
+			        value={this.state.confirm_password}/> 
 		    	<View style = {styles.confirm_password_line} />
 
 		    	<Foundation name="mail" size={30} color="#000000" style={styles.envelope_body}/>
@@ -118,12 +156,12 @@ export class SignUpScreen extends React.Component {
 		    	<EvilIcons name="lock" size={30} color="#000000" style={styles.lock_confirm_pass}/>
 		    	<Entypo name="old-phone" size={30} color="#000000" style={styles.phone_body}/>
 
-		    	<TouchableOpacity style = {styles.search_laundromat_rectangle} onPress={() => {Alert.alert('Search Laundromat');}}><Text style = {styles.search_laundromat_text}>Search {"\n"} Laundromats</Text></TouchableOpacity>	
-		    	<TouchableOpacity style = {styles.add_apartment_rectangle} onPress={() => {Alert.alert('Add Apartment');}}><Text style = {styles.add_your_apartment_text}>Add Your {"\n"} Apartment</Text></TouchableOpacity>	
-
-		    	 
 		    	
-	    		
+		    	<TouchableOpacity style = {styles.login_box} onPress ={() => this._checkSignUp() }>
+			    	<Text style = {styles.login_text}>Sign Up</Text>
+		    	</TouchableOpacity> 
+
+ 
 	    	</View>
 
 
@@ -135,6 +173,11 @@ export class SignUpScreen extends React.Component {
 	);
 	}
 }
+
+//<TouchableOpacity style = {styles.search_laundromat_rectangle} onPress={() => {Alert.alert('Search Laundromat');}}><Text style = {styles.search_laundromat_text}>Search {"\n"} Laundromats</Text></TouchableOpacity>	
+//		    	<TouchableOpacity style = {styles.add_apartment_rectangle} onPress={() => {Alert.alert('Add Apartment');}}><Text style = {styles.add_your_apartment_text}>Add Your {"\n"} Apartment</Text></TouchableOpacity>	
+	
+
 
 // <View style = {styles.rectangle_header} />
 // 		    	<Text style = {styles.create_account_text}>Create Account</Text>

@@ -154,9 +154,9 @@ export default StyleSheet.create({
   	name_text:{
 
 		position: 'absolute',
-		width: 52,
+		width: 192,//52,
 		height: 25,
-		left: 161,
+		left: 91,//161,
 		top: name_text_top,
 
 		fontFamily: 'Cochin',
@@ -166,17 +166,18 @@ export default StyleSheet.create({
 		fontSize: 18,
 		textAlign: 'center',
 
-		color: '#F2F2F2',
+		color: '#000000',
 		borderWidth: 0,
 		borderColor: '#000000',
 
 	},
+
 	phone_number_text:{
 
 		position: 'absolute',
-		width: 62,
+		width: 122,//62,
 		height: 25,
-		left: 156,
+		left: 126,//156,
 		top: name_text_top+45,
 
 		fontFamily: 'Cochin',
@@ -186,7 +187,7 @@ export default StyleSheet.create({
 		fontSize: 18,
 		textAlign: 'center',
 
-		color: '#F2F2F2',
+		color: '#000000',
 		borderWidth: 0,
 		borderColor: '#000000',
 
@@ -207,7 +208,7 @@ export default StyleSheet.create({
 		fontSize: 18,
 		textAlign: 'center',
 
-		color: '#F2F2F2',
+		color: '#000000',
 		borderWidth: 0,
 		borderColor: '#000000',
 
@@ -229,7 +230,7 @@ export default StyleSheet.create({
 		fontSize: 18,
 		textAlign: 'center',
 
-		color: '#F2F2F2',
+		color: '#000000',
 		borderWidth: 0,
 		borderColor: '#000000',
 	},
@@ -249,7 +250,7 @@ export default StyleSheet.create({
 		fontSize: 18,
 		textAlign: 'center',
 
-		color: '#F2F2F2',
+		color: '#000000',
 		borderWidth: 0,
 		borderColor: '#000000',
 	},
@@ -305,26 +306,40 @@ export default StyleSheet.create({
 		borderRadius: 10,
   	},
 
+  	login_box:{
 
-  	login_text:{
+		position: 'absolute',
+		width: 211,
+		height: 37,
+		left: 82,
+		top: -63+426,
 
-  		position: 'absolute',
-		width: 50,
-		height: 14,
-		left: 6,
-		top: -63+29,
+		backgroundColor: '#27AE60',
+		borderRadius: 10,
+		flex: 1, 
+		justifyContent: 'center',
+		alignItems: 'center',
+
+		flexDirection: 'row',
+
+	},
+
+
+	login_text:{		
 
 		fontFamily: 'Cochin',
 		fontStyle: 'normal',
 		fontWeight: 'bold',
-		lineHeight: 0,
-		fontSize: 14,
+		lineHeight: 30,
+		fontSize: 20,
 		textAlign: 'center',
 
-		color: '#000000',
+		color: '#F2F2F2',
 
-  	},
+	},
 
+
+  	
 
 
 })

@@ -98,7 +98,7 @@ email_text:{
 	fontSize: 18,
 	textAlign: 'center',
 
-	color: '#2D9CDB', //'#F2F2F2',
+	color: '#000000', //'#F2F2F2',
 	borderWidth: 0,
 	borderStyle: 'solid',
 	borderColor: '#000000',
@@ -120,7 +120,7 @@ password_text:{
 	fontSize: 18,
 	textAlign: 'center',
 
-	color: '#2D9CDB',//'#F2F2F2',
+	color: '#000000', //'#2D9CDB',//'#F2F2F2',
 	borderColor:'#000000',
 	borderWidth: 0,
 	borderStyle:'solid',
