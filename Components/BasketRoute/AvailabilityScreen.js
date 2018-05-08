@@ -4,6 +4,9 @@ import {StyleSheet, Text, View, Button, TouchableOpacity, Alert } from 'react-na
 import styles from "../Styles/AvailabilityStyles"
 import Entypo from 'react-native-vector-icons/Entypo';
 
+import TimerMixin from 'react-timer-mixin';
+
+
 
 
 
@@ -26,12 +29,19 @@ export class AvailabilityScreen extends React.Component {
            this._getWasherInfo = this._getWasherInfo.bind(this);
 
     }
+    mixins: [TimerMixin];
+
     componentDidMount() {
     // Register the alert located on this master page
     // This MessageBar will be accessible from the current (same) component, and from its child component
     // The MessageBar is then declared only once, in your main component.
     MessageBarManager.registerMessageBar(this.refs.alert);
-    this.setTimeout(() =>this._getWasherInfo,1000);
+    //setTimeout(() =>console.log("hello"),500);
+      this.interval = setInterval(() => {
+          this._getWasherInfo();
+
+      }, 1000); //6 seconds
+
     }
 
     componentWillUnmount() {
@@ -110,11 +120,6 @@ export class AvailabilityScreen extends React.Component {
      
           
   }
-
-
- 
-   
-   
 
 	 render() {
        
