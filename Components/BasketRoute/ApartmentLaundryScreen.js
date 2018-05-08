@@ -20,11 +20,12 @@ export class ApartmentLaundryScreen extends React.Component {
   	}
 
 	render() {
+		const {navigate} = this.props.navigation;
 	    return (
 	    	<TouchableWithoutFeedback onPress = {Keyboard.dismiss}>
 	    	<View style = {styles.main_screen}>
 		    	
-		    	<TouchableOpacity style = {styles.apartment_code_rectangle} onPress ={() => alert('Company Vision - SimTa is working on that!') }>
+		    	<TouchableOpacity style = {styles.apartment_code_rectangle} onPress ={() => navigate('ApartmentLaundryCode') }>
 		    		<Text style = {styles.apartment_code_text}>Enter Apartment Code</Text>
 		    	</TouchableOpacity>
 

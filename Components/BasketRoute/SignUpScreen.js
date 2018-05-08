@@ -14,12 +14,7 @@ import Feather from 'react-native-vector-icons/Feather';
 
 import styles from "../Styles/SignupStyles"
 
-export class SignUpScreen extends React.Component {
-
-	// static navigationOptions = {
- //        header: null
- //    	}
- 
+export class SignUpScreen extends React.Component { 
 	constructor(props) {
 	    super(props);
 	    this.state = { 

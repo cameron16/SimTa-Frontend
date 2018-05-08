@@ -12,21 +12,22 @@ import {WasherScreen} from './Components/BasketRoute/WasherScreen'
 import {ApartmentLaundryScreen} from './Components/BasketRoute/ApartmentLaundryScreen'
 import {LaundryScreen} from './Components/BasketRoute/LaundryScreen'
 import {SimTaHomeScreen} from './Components/BasketRoute/SimTaHomeScreen'
+import {ApartmentLaundryCodeScreen} from './Components/BasketRoute/ApartmentLaundryCodeScreen'
 
 import { DrawerItems, SafeAreaView } from 'react-navigation';
 
 import styles from './Components/Styles/HeaderStyles'
 
 
-
+// styles.green_header_rectangle,
 const RootNavigator = StackNavigator({
 
   Login: {
-    screen: SimTaHomeScreen,
+    screen: LoginScreen,
     navigationOptions: {
       headerTitle: 'Welcome to SimTa',
       headerTitleStyle: styles.header_text,
-      headerStyle:  styles.green_header_rectangle, 
+      headerStyle:  styles.green_header_rectangle,  
       
     },
   },
@@ -81,6 +82,17 @@ const RootNavigator = StackNavigator({
       headerTintColor: '#F2F2F2'
     },
   },
+  ApartmentLaundryCode:{
+    screen: ApartmentLaundryCodeScreen,
+    navigationOptions: {
+      headerTitle: 'Apartment Code', 
+      headerTitleStyle: styles.header_text,
+      headerStyle:  styles.blue_header_rectangle, 
+      headerBackTitleStyle: styles.back_text,
+      headerTintColor: '#F2F2F2'
+    },
+  },
+
   Laundry:{
     screen: LaundryScreen,
     navigationOptions: {
