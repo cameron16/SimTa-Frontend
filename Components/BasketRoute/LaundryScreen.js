@@ -36,7 +36,7 @@ export class LaundryScreen extends React.Component {
 			    	<Text style = {styles.Apartment_text}>APARTMENT</Text>
 		    	</TouchableOpacity>	
 
-		    	<TouchableOpacity style = {styles.Laundromat_rectangle} onPress ={() => navigate('Availability') }>
+		    	<TouchableOpacity style = {styles.Laundromat_rectangle} onPress ={() => navigate('LaundromatSearch') }>
 			    	<Text style = {styles.Laundromat_text}>LAUNDROMAT</Text>
 		    	</TouchableOpacity>	 
 

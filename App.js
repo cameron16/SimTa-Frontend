@@ -13,6 +13,8 @@ import {ApartmentLaundryScreen} from './Components/BasketRoute/ApartmentLaundryS
 import {LaundryScreen} from './Components/BasketRoute/LaundryScreen'
 import {SimTaHomeScreen} from './Components/BasketRoute/SimTaHomeScreen'
 import {ApartmentLaundryCodeScreen} from './Components/BasketRoute/ApartmentLaundryCodeScreen'
+import {LaundromatSearchScreen} from './Components/BasketRoute/LaundromatSearchScreen'
+
 
 import { DrawerItems, SafeAreaView } from 'react-navigation';
 
@@ -23,7 +25,7 @@ import styles from './Components/Styles/HeaderStyles'
 const RootNavigator = StackNavigator({
 
   Login: {
-    screen: ApartmentLaundryCodeScreen,
+    screen: LaundryScreen,
     navigationOptions: {
       headerTitle: 'Welcome to SimTa',
       headerTitleStyle: styles.header_text,
@@ -103,6 +105,21 @@ const RootNavigator = StackNavigator({
       headerTintColor: '#F2F2F2'
     },
   },
+  LaundromatSearch:{
+    screen: LaundromatSearchScreen,
+    navigationOptions: {
+      headerTitle: 'Laundromat Search', 
+      headerTitleStyle: styles.header_text,
+      headerStyle:  styles.blue_header_rectangle, 
+      headerBackTitleStyle: styles.back_text,
+      headerTintColor: '#F2F2F2'
+    },
+  },
+
+
+
+
+  
   
 
 
