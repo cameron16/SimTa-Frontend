@@ -23,7 +23,7 @@ import styles from './Components/Styles/HeaderStyles'
 const RootNavigator = StackNavigator({
 
   Login: {
-    screen: LoginScreen,
+    screen: AvailabilityScreen,
     navigationOptions: {
       headerTitle: 'Welcome to SimTa',
       headerTitleStyle: styles.header_text,
