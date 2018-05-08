@@ -9,8 +9,6 @@ import EvilIcons from 'react-native-vector-icons/EvilIcons';
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 
 
-
-
 import styles from "../Styles/WashersStyles";
 
 export class WasherScreen extends React.Component {

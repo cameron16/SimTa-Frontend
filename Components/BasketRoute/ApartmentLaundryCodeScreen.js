@@ -57,6 +57,3 @@ export class ApartmentLaundryCodeScreen extends React.Component{
 
 
 
-      // containerStyle={{ marginTop: 30 }}
-      // codeInputStyle={{ borderWidth: 1.5 }}
-
