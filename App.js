@@ -22,7 +22,7 @@ import styles from './Components/Styles/HeaderStyles'
 const RootNavigator = StackNavigator({
 
   Login: {
-    screen: LoginScreen,
+    screen: SimTaHomeScreen,
     navigationOptions: {
       headerTitle: 'Welcome to SimTa',
       headerTitleStyle: styles.header_text,
@@ -74,7 +74,7 @@ const RootNavigator = StackNavigator({
   ApartmentLaundry:{
     screen: ApartmentLaundryScreen,
     navigationOptions: {
-      headerTitle: 'Apartment Laundry Room', 
+      headerTitle: 'Apartment', 
       headerTitleStyle: styles.header_text,
       headerStyle:  styles.blue_header_rectangle, 
       headerBackTitleStyle: styles.back_text,

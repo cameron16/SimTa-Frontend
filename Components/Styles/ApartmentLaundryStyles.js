@@ -104,7 +104,7 @@ apartment_code_text:{
 	fontSize: 18,
 	textAlign: 'center',
 
-	color: '#E0E0E0',
+	color: '#F2F2F2', //'#E0E0E0',
 },
 
 
