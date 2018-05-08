@@ -1,5 +1,5 @@
 import React from 'react';
-import {StyleSheet, Text, View, Button, TouchableOpacity } from 'react-native';
+import {StyleSheet, Text, View, Button, TouchableOpacity, Alert } from 'react-native';
 
 import styles from "../Styles/AvailabilityStyles"
 import Entypo from 'react-native-vector-icons/Entypo';
@@ -23,6 +23,7 @@ export class AvailabilityScreen extends React.Component {
         available_washers: 0,
      };
            this.pingUsers = this.pingUsers.bind(this);
+           this._getWasherInfo = this._getWasherInfo.bind(this);
 
     }
     componentDidMount() {
@@ -30,14 +31,15 @@ export class AvailabilityScreen extends React.Component {
     // This MessageBar will be accessible from the current (same) component, and from its child component
     // The MessageBar is then declared only once, in your main component.
     MessageBarManager.registerMessageBar(this.refs.alert);
+    this.setTimeout(() =>this._getWasherInfo,1000);
     }
 
-componentWillUnmount() {
-  // Remove the alert located on this master page from the manager
-  MessageBarManager.unregisterMessageBar();
-}
+    componentWillUnmount() {
+      // Remove the alert located on this master page from the manager
+      MessageBarManager.unregisterMessageBar();
+    }
 
-pingUsers() {
+  pingUsers() {
     // Title or Message is at least Mandatory
     // alertType is not Mandatory, but if no alertType provided, 'info' (blue color) will picked for you
 
@@ -60,7 +62,56 @@ pingUsers() {
       alertType: 'success'
     });
   }
- 
+
+
+
+  _getWasherInfo(){
+    console.log('running washer info');
+    var location = this.props.navigation.state.params.location;
+    var url = "https://smartapp-196617.appspot.com/washer/" + location;
+    fetch(url, {
+            method: "GET",
+            headers: {
+              "Content-Type": "application/json"
+            },
+          }).then(function(response){
+            if (response.status >= 400){
+              console.log("there was an error")
+              Alert.alert(
+                'We are experiencing technical difficulties on user type screen. Please try again'
+              ) 
+            } 
+            else{
+              var myResponseBody = response._bodyInit.replace(/\\/g, "")
+              var splitResponse = myResponseBody.split('"_id"');
+              myArray=[]
+              for (i =1; i<splitResponse.length; i++){
+                var washer_num_index = splitResponse[i].indexOf('washer_num')
+                washer_num_and_status = splitResponse[i].substring(washer_num_index).match(/\d+\.\d+|\d+\b|\d+(?=\w)/g).map(function (v) {return +v;});
+                thisObject = {'washer_num': washer_num_and_status[0], 'washer_status': washer_num_and_status[1]}
+                myArray.push(thisObject);
+              }
+              var available_washers=0;
+              for (i =0; i<myArray.length; i++){
+                if (myArray[i].washer_status == 1){
+                    available_washers = available_washers +1;
+                }
+              }
+              this.setState({'available_washers': available_washers})
+
+            }
+      }.bind(this)); 
+
+  }
+
+
+  componentWillMount(){
+    this._getWasherInfo();
+     
+          
+  }
+
+
  
    
    
@@ -97,7 +148,7 @@ pingUsers() {
 
 
           <View style = {styles.rectangle_dryer} />
-          <TouchableOpacity activeOpacity = {1} style = {styles.dryer_union_rectangle_2} onPress={()=>{this.setState({available_washers: 1}); this.notifyAvailable()}}></TouchableOpacity>  
+          <TouchableOpacity activeOpacity = {1} style = {styles.dryer_union_rectangle_2} onPress={()=>alert('hi')}></TouchableOpacity>  
          
 
           <Text style = {styles.dryer_text}>Dryers</Text>
@@ -115,7 +166,7 @@ pingUsers() {
 	    );
 	  }
 	}
-
+//this._getWasherInfo()
 
 
            // <TouchableOpacity style = {styles.washer_union_rectangle_1} onPress ={() => navigate('Washer')}></TouchableOpacity> 
