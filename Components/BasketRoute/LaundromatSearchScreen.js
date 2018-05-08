@@ -20,10 +20,8 @@ export class LaundromatSearchScreen extends React.Component{
 
 	_onSearch(){
 		const {navigate} = this.props.navigation;
-		console.log('hello')
-		
-		
-
+		navigate('Availability',{location: '570West45'});
+	
 	}
 	
 	render() {
