@@ -94,7 +94,7 @@ export class AvailabilityScreen extends React.Component {
     if (this.state.available_washers == 0){
       this.setState({'available_washers_notification_sent': 0})
     }
-    else if (this.state.available_washers >0 && this.state.available_washers_notification_sent == 0){
+    else if (this.state.available_washers >0 && this.state.available_washers_notification_sent == 0 && this.state.washer_notify == true){
       this.notifyWasherAvailable();
       this.setState({'available_washers_notification_sent':1})
     } 
