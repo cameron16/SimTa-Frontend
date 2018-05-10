@@ -16,6 +16,10 @@ blue_header_rectangle:{
 	backgroundColor: '#2D9CDB',
 },
 
+red_header_rectangle:{  
+  backgroundColor: '#EB5757',
+},
+
 
 header_text:{
 	fontFamily: 'Cochin',

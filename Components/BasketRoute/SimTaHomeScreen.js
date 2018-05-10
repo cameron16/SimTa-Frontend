@@ -36,7 +36,7 @@ export class SimTaHomeScreen extends React.Component {
 
 		    	
 	    		
-		    	<TouchableOpacity style = {styles.OVEN_rectangle} onPress ={() => navigate('Laundry') }>
+		    	<TouchableOpacity style = {styles.OVEN_rectangle} onPress ={() => navigate('Oven') }>
 			    	<MaterialCommunityIcons name="stove" size={50} color="#6FCF97" style={styles.Rectangle_oven_body}/>
 			    	<Text style = {styles.OVEN_text}>OVEN</Text>
 		    	</TouchableOpacity>

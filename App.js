@@ -14,6 +14,7 @@ import {LaundryScreen} from './Components/BasketRoute/LaundryScreen'
 import {SimTaHomeScreen} from './Components/BasketRoute/SimTaHomeScreen'
 import {ApartmentLaundryCodeScreen} from './Components/BasketRoute/ApartmentLaundryCodeScreen'
 import {LaundromatSearchScreen} from './Components/BasketRoute/LaundromatSearchScreen'
+import {OvenScreen} from './Components/BasketRoute/OvenScreen'
 
 
 import { DrawerItems, SafeAreaView } from 'react-navigation';
@@ -115,8 +116,16 @@ const RootNavigator = StackNavigator({
       headerTintColor: '#F2F2F2'
     },
   },
-
-
+ Oven:{
+    screen: OvenScreen,
+    navigationOptions: {
+      headerTitle: 'Your Oven', 
+      headerTitleStyle: styles.header_text,
+      headerStyle:  styles.red_header_rectangle, 
+      headerBackTitleStyle: styles.back_text,
+      headerTintColor: '#F2F2F2'
+    },
+  },
 
 
   
