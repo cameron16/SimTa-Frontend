@@ -21,7 +21,7 @@ export class ApartmentLaundryCodeScreen extends React.Component{
 		  'Your code: ' +code,
 		  'We do not have an apartment signed up yet so we will take you to 550 West',
 		  [
-		    {text: 'Okay!', onPress: () => navigate('Availability',{location: '570West45'})},
+		    {text: 'Okay!', onPress: () => navigate('Availability',{location: '550West45'})},
 		  ],
 		)
 		

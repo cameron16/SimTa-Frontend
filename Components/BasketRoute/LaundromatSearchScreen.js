@@ -10,6 +10,7 @@ export class LaundromatSearchScreen extends React.Component{
 	constructor(props){
 		super(props);
 		this.state = {
+			name: ''
 	    }; 
 	    this._onSearch = this._onSearch.bind(this);
 
@@ -18,9 +19,18 @@ export class LaundromatSearchScreen extends React.Component{
 	}
 
 
-	_onSearch(){
+	_onSearch(laundromat){
 		const {navigate} = this.props.navigation;
-		navigate('Availability',{location: '570West45'});
+
+		Alert.alert(
+		  'Your code: ' + this.state.name,
+		  'We do not have a laundromat signed up yet so we will take you to 550 West',
+		  [
+		    {text: 'Okay!', onPress: () => navigate('Availability',{location: '570West45'})},
+		  ],
+		)
+		
+		//navigate('Availability',{location: '570West45'});
 	
 	}
 	

@@ -19,8 +19,10 @@ export class AvailabilityScreen extends React.Component {
         washer_notify: false,
         washer_ping: false,
         available_washers: 0,
+        total_washers: 0,
         available_washers_notification_sent: 1,
         available_dryers: 0,
+        total_dryers: 0,
         available_dryers_notification_sent: 1,
      };
            this.pingUsers = this.pingUsers.bind(this);
@@ -29,8 +31,6 @@ export class AvailabilityScreen extends React.Component {
 
            this._getDryerInfo = this._getDryerInfo.bind(this);
            this._checkDryerAvailability = this._checkDryerAvailability.bind(this);
-
-
     }
     mixins: [TimerMixin];
 
@@ -132,7 +132,7 @@ export class AvailabilityScreen extends React.Component {
               console.log(splitResponse);
               for (i =1; i<splitResponse.length; i++){
                 var dryer_num_index = splitResponse[i].indexOf('dryer_num')
-                var dryer_status_index = splitResponse[i].indexOf('laundry_status')
+                var dryer_status_index = splitResponse[i].indexOf('dryer_status')
                 dryer_num = splitResponse[i].substring(dryer_num_index).match(/\d+\.\d+|\d+\b|\d+(?=\w)/g).map(function (v) {return +v;});
                 dryer_status = splitResponse[i].substring(dryer_status_index).match(/\d+\.\d+|\d+\b|\d+(?=\w)/g).map(function (v) {return +v;});
                 thisObject = {'dryer_num': dryer_num[0], 'dryer_status': dryer_status[0]}
@@ -140,12 +140,15 @@ export class AvailabilityScreen extends React.Component {
               }
               console.log(myArray);
               var available_dryers=0;
+              var total_dryers = 0;
               for (i =0; i<myArray.length; i++){
                 if (myArray[i].dryer_status == 1){
                     available_dryers = available_dryers +1;
                 }
+                total_dryers = total_dryers + 1;
               }
               this.setState({'available_dryers': available_dryers})
+              this.setState({'total_dryers': total_dryers})
 
             }
       }.bind(this)); 
@@ -178,12 +181,15 @@ export class AvailabilityScreen extends React.Component {
                 myArray.push(thisObject);
               }
               var available_washers=0;
+              var total_washers = 0;
               for (i =0; i<myArray.length; i++){
                 if (myArray[i].washer_status == 1){
                     available_washers = available_washers +1;
                 }
+                total_washers = total_washers + 1
               }
               this.setState({'available_washers': available_washers})
+              this.setState({'total_washers': total_washers})
 
             }
       }.bind(this)); 
@@ -213,7 +219,7 @@ export class AvailabilityScreen extends React.Component {
           <Text style = {styles.washer_text}>Washers</Text>
           <View  style = {styles.washer_polygon_avail} />
           <View style = {styles.washer_ellipse_avail} />
-          <Text style = {styles.washer_available_text}>{this.state.available_washers} of 10 Available</Text>
+          <Text style = {styles.washer_available_text}>{this.state.available_washers} of {this.state.total_washers} Available</Text>
 
           <TouchableOpacity activeOpacity = {1} style = {styles.washer_rectangle_notify} onPress ={() => this.setState({washer_notify: true})}></TouchableOpacity>  
 
@@ -224,13 +230,13 @@ export class AvailabilityScreen extends React.Component {
           <Text style = {styles.washer_ping_text}>Ping Idle Users</Text>
 
           <View style = {styles.rectangle_dryer} />
-          <TouchableOpacity activeOpacity = {1} style = {styles.dryer_union_rectangle_2} onPress={()=>alert('hi')}></TouchableOpacity>  
+          <TouchableOpacity activeOpacity = {1} style = {styles.dryer_union_rectangle_2} ></TouchableOpacity>  
 
           <Text style = {styles.dryer_text}>Dryers</Text>
 
           <View  style = {styles.dryer_polygon_avail} />
           <View style = {styles.dryer_ellipse_avail} />
-          <Text style = {styles.dryer_available_text}>{this.state.available_dryers} of 10 Available</Text>
+          <Text style = {styles.dryer_available_text}>{this.state.available_dryers} of {this.state.total_dryers} Available</Text>
           {washer_notify_checkmark}
           {washer_ping_checkmark}
           
