@@ -18,6 +18,8 @@ export class AvailabilityScreen extends React.Component {
       this.state = { 
         washer_notify: false,
         washer_ping: false,
+        dryer_notify: false,
+        dryer_ping: false,
         available_washers: 0,
         total_washers: 0,
         available_washers_notification_sent: 1,
@@ -104,7 +106,7 @@ export class AvailabilityScreen extends React.Component {
     if (this.state.available_dryers == 0){
       this.setState({'available_dryers_notification_sent': 0})
     }
-    else if (this.state.available_dryers >0 && this.state.available_dryers_notification_sent == 0){
+    else if (this.state.available_dryers >0 && this.state.available_dryers_notification_sent == 0&& this.state.dryer_notify == true){
       this.notifyDryerAvailable();
       this.setState({'available_dryers_notification_sent':1})
     } 
@@ -205,7 +207,9 @@ export class AvailabilityScreen extends React.Component {
         const {navigate} = this.props.navigation;
         const washer_notify_checkmark = this.state.washer_notify ? <Entypo name="check" size={25} style={styles.washer_notify_checkmark}/>  : <View></View>
         const washer_ping_checkmark = this.state.washer_ping ? <Entypo name="check" size={25} style={styles.washer_ping_checkmark}/>  : <View></View>
-	     
+        const dryer_notify_checkmark = this.state.dryer_notify ? <Entypo name="check" size={25} style={styles.dryer_notify_checkmark}/>  : <View></View>
+        const dryer_ping_checkmark = this.state.dryer_ping ? <Entypo name="check" size={25} style={styles.dryer_ping_checkmark}/>  : <View></View>
+       	     
       return ( 
 
 
@@ -237,8 +241,19 @@ export class AvailabilityScreen extends React.Component {
           <View  style = {styles.dryer_polygon_avail} />
           <View style = {styles.dryer_ellipse_avail} />
           <Text style = {styles.dryer_available_text}>{this.state.available_dryers} of {this.state.total_dryers} Available</Text>
+
+
+          <TouchableOpacity activeOpacity = {1} style = {styles.dryer_rectangle_notify} onPress ={() => this.setState({dryer_notify: true})}></TouchableOpacity>  
+
+          <Text style = {styles.dryer_notify_text}>Notify When Dryer Available</Text>
+
+          <TouchableOpacity activeOpacity = {1} style = {styles.dryer_rectangle_ping} onPress ={() => {this.setState({dryer_ping: true}); this.pingUsers()}}></TouchableOpacity>  
+
+          <Text style = {styles.dryer_ping_text}>Ping Idle Users</Text>
           {washer_notify_checkmark}
           {washer_ping_checkmark}
+          {dryer_notify_checkmark}
+          {dryer_ping_checkmark}
           
           <MessageBarAlert ref="alert" />
           

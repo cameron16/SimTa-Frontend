@@ -313,13 +313,88 @@ export default StyleSheet.create({
     fontSize: 18,
 
     color: '#000000',
+  },
 
+        /*****************/
+dryer_rectangle_notify:{
+    position: 'absolute',
+    width: 20,
+    height: 20,
+    left: 42.5,
+    top: -63+ 215+265,
 
+    backgroundColor: '#F2F2F2',
+    borderColor:  '#2D9CDB',
+    borderWidth: 2,
+    borderRadius: 3,
+
+  },
+
+  dryer_notify_checkmark:{
+    position: 'absolute',
+    width: 50,
+    height: 50,
+    left: 40,
+    top: -63+ 212+265,
+
+    color: '#27AE60'
+
+  },
+
+  dryer_notify_text:{
+    position: 'absolute',
+    width: 268,
+    height: 24,
+    left: 79,
+    top: -63+ 214+265,
+    fontFamily: 'Cochin',
+    fontStyle: 'normal',
+    fontWeight: 'normal',
+    fontSize: 18,
+
+    color: '#000000',
 
   },
 
 
+  dryer_rectangle_ping:{
+    position: 'absolute',
+    width: 20,
+    height: 20,
+    left: 42.5,
+    top: -63+ 267+265,
+    backgroundColor: '#F2F2F2',
+    borderColor:  '#2D9CDB',
+    borderWidth: 2,
+    borderRadius: 3,
 
+  },
+
+   dryer_ping_checkmark:{
+    position: 'absolute',
+    width: 50,
+    height: 50,
+    left: 40,
+    top: -63+ 264+265,
+
+    color: '#27AE60'
+
+  },
+
+  dryer_ping_text:{
+    position: 'absolute',
+    width: 141,
+    height: 22,
+    left: 79,
+    top: -63+ 266+265,
+
+    fontFamily: 'Cochin',
+    fontStyle: 'normal',
+    fontWeight: 'normal',
+    fontSize: 18,
+
+    color: '#000000',
+  },
 
        /******************/
 
